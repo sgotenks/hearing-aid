@@ -14,6 +14,9 @@ import cardsIconParser from './parsers/cards-icon.js';
 import amplifonCleanupTransformer from './transformers/amplifon-cleanup.js';
 import amplifonSectionsTransformer from './transformers/amplifon-sections.js';
 
+// IMAGE PATHS
+import { localizeImageReferences } from './image-paths.js';
+
 // PARSER REGISTRY
 const parsers = {
   'hero': heroParser,
@@ -329,7 +332,10 @@ export default {
     WebImporter.rules.transformBackgroundImages(main, document);
     WebImporter.rules.adjustImageUrls(main, url, params.originalURL);
 
-    // 6. Document path
+    // 6. Point images at their site DAM path (files are fetched by localize-images.mjs)
+    localizeImageReferences(main);
+
+    // 7. Document path
     const path = getDocumentPath(params.originalURL);
 
     return [{

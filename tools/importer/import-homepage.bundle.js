@@ -483,11 +483,6 @@ var CustomImportScript = (() => {
         "style"
       ]);
       element.querySelectorAll("[onclick]").forEach((el) => el.removeAttribute("onclick"));
-      element.querySelectorAll('img[src*="/content/dam/"]').forEach((img) => {
-        const src = img.getAttribute("src");
-        const original = src.replace(/\/(?:jcr:content|_jcr_content|jcr%3Acontent)\/renditions\/[^?#]*/i, "");
-        if (original !== src) img.setAttribute("src", original);
-      });
     }
   }
 
@@ -540,6 +535,45 @@ var CustomImportScript = (() => {
         }
       }
     }
+  }
+
+  // tools/importer/image-paths.js
+  var SOURCE_ORIGIN = "https://www.amplifon.com";
+  var SITE_DAM_PATH = "/content/dam/hearing-aid";
+  var IMAGE_EXT = /\.(jpe?g|png|gif|webp|svg|avif)$/i;
+  var RENDITION = /\/(?:jcr:content|_jcr_content|jcr%3Acontent)\/renditions\/[^?#]*$/i;
+  var cleanSegment = (segment) => decodeURIComponent(segment).trim().replace(/[\s*/:[\]|#%{}?"^;+&]+/g, "-");
+  function parseSourceImage(src) {
+    if (!src) return null;
+    let url;
+    try {
+      url = new URL(src, SOURCE_ORIGIN);
+    } catch (e) {
+      return null;
+    }
+    if (url.origin !== SOURCE_ORIGIN) return null;
+    const path = url.pathname.replace(RENDITION, "");
+    if (!IMAGE_EXT.test(path)) return null;
+    if (path.startsWith("/content/dam/") && !path.startsWith(`${SITE_DAM_PATH}/`)) {
+      const segments = path.slice("/content/dam/".length).split("/").map(cleanSegment);
+      const file = segments.pop();
+      return {
+        sourceUrl: `${SOURCE_ORIGIN}${path}`,
+        damPath: `${SITE_DAM_PATH}/${segments.map((s) => s.toLowerCase()).join("/")}/${file}`,
+        kind: "dam"
+      };
+    }
+    if (path.startsWith("/etc.clientlibs/")) {
+      const file = cleanSegment(path.split("/").pop());
+      return { sourceUrl: `${SOURCE_ORIGIN}${path}`, damPath: `${SITE_DAM_PATH}/icons/${file}`, kind: "static" };
+    }
+    return null;
+  }
+  function localizeImageReferences(element) {
+    element.querySelectorAll("img[src]").forEach((img) => {
+      const parsed = parseSourceImage(img.getAttribute("src"));
+      if (parsed) img.setAttribute("src", parsed.damPath);
+    });
   }
 
   // tools/importer/import-homepage.js
@@ -816,6 +850,7 @@ var CustomImportScript = (() => {
       WebImporter.rules.createMetadata(main, document2);
       WebImporter.rules.transformBackgroundImages(main, document2);
       WebImporter.rules.adjustImageUrls(main, url, params.originalURL);
+      localizeImageReferences(main);
       const path = getDocumentPath(params.originalURL);
       return [{
         element: main,
