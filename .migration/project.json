@@ -1,0 +1,18 @@
+{
+  "type": "xwalk",
+  "sites": {
+    "hearing-aid": {
+      "previewOrg": "sgotenks",
+      "previewSite": "hearing-aid",
+      "contentHostUrl": "author-p129757-e1266090.adobeaemcloud.com",
+      "aemSitePath": "/content/hearing-aid",
+      "aemAssetsFolderPath": "/content/dam/hearing-aid",
+      "aemSiteName": "hearing-aid",
+      "aemSiteTitle": "Hearing Aid",
+      "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json"
+    }
+  },
+  "features": [
+    "site-planning"
+  ]
+}

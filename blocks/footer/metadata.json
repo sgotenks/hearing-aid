@@ -1,0 +1,28 @@
+{
+  "variantName": "footer",
+  "baseBlock": "footer",
+  "canonicalModel": "configuration",
+  "visualCharacteristics": {
+    "colorScheme": "mixed",
+    "complexity": "moderate",
+    "density": "moderate"
+  },
+  "contentPattern": {
+    "structure": "footer fragment reference; sections of link lists, contact info and legal text loaded from /footer"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "footer-global"
+  ],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.amplifon.com/ca/",
+        "instanceId": "footer-global",
+        "screenshot": ".pages/_global/footer.jpg"
+      }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-01T13:39:19.239Z"
+  }
+}

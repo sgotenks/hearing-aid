@@ -1,0 +1,47 @@
+{
+  "variantName": "tabs",
+  "baseBlock": "tabs",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "moderate",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "noimg",
+    "structure": "heading + text + 4 CTAs"
+  },
+  "contentPattern": {
+    "structure": "repeating rows; each tab: label cell + content cell (heading, text, CTAs)"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_c6c0b0f6cde5-1",
+    "v_c6c0b0f6cde5"
+  ],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/connectivity",
+        "instanceId": "704f19f7",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_connectivity--2c807b4b/blocks/704f19f7.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/invisibility",
+        "instanceId": "704f19f7",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_invisibility--c0315b13/blocks/704f19f7.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/rechargeability",
+        "instanceId": "704f19f7",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_rechargeability--f381f90f/blocks/704f19f7.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/affordability",
+        "instanceId": "704f19f7",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_affordability--714f3a12/blocks/704f19f7.jpg"
+      }
+    ],
+    "reuseCount": 4,
+    "lastUsed": "2026-10-01T13:39:19.957Z"
+  }
+}

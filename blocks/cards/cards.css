@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity -- option rules (.icon, .image-overlay, .teaser, ...) never match the same element */
 .cards > ul {
   list-style: none;
   margin: 0;
@@ -20,8 +21,528 @@
   line-height: 0;
 }
 
+/* authored/imported image cells may wrap the picture in a <p> */
+.cards .cards-card-image > p {
+  margin: 0;
+}
+
 .cards > ul > li img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+/* shared: cards whose body stacks content with the CTA last */
+.cards.icon > ul > li,
+.cards.teaser > ul > li,
+.cards.steps > ul > li,
+.cards.icon-badge > ul > li,
+.cards.promo-tile > ul > li {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards.icon .cards-card-body,
+.cards.teaser .cards-card-body,
+.cards.icon-badge .cards-card-body,
+.cards.promo-tile .cards-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cards.icon .cards-card-body > :last-child,
+.cards.teaser .cards-card-body > :last-child,
+.cards.icon-badge .cards-card-body > :last-child,
+.cards.promo-tile .cards-card-body > :last-child {
+  margin-top: auto;
+}
+
+/* icon: small centered pictogram above centered text and CTA */
+
+/* undo the global `.icon` (inline 24x24 icon span) rule, which otherwise matches this block */
+.cards.icon {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+/* mobile: compact full-card link rows (small icon, title, chevron) */
+.cards.icon > ul {
+  gap: 20px;
+}
+
+.cards.icon > ul > li {
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  border: 0;
+  border-radius: 6px;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+.cards.icon > ul > li::after {
+  content: "";
+  flex: none;
+  width: 11px;
+  height: 20px;
+  margin-left: auto;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 7 12'%3E%3Cpath fill='%23c5003e' d='M3.5 7.277L.269 10.464a.89.89 0 0 0 0 1.273.917.917 0 0 0 .645.263.916.916 0 0 0 .646-.263l3.233-3.188L3.5 7.277zm2.583 0l.65-.64a.89.89 0 0 0 0-1.273L1.558.264a.922.922 0 0 0-1.291 0 .89.89 0 0 0 0 1.272l4.524 4.468 1.291 1.273z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.cards.icon .cards-card-image {
+  flex: none;
+  margin-left: 6px;
+}
+
+.cards.icon > ul > li img {
+  width: 18px;
+  height: 18px;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.cards.icon .cards-card-body {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.cards.icon .cards-card-body > :is(h1, h2, h3, h4, h5, h6) {
+  margin: 0;
+  font-size: var(--heading-font-size-s);
+  line-height: 26px;
+}
+
+.cards.icon .cards-card-body > p:not(.button-container) {
+  display: none;
+}
+
+.cards.icon .cards-card-body > .button-container {
+  margin: 0;
+}
+
+/* the CTA covers the whole card; its label stays available to assistive tech */
+.cards.icon .cards-card-body a.button:any-link {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  border-radius: 6px;
+  padding: 0;
+  background-color: transparent;
+  color: transparent;
+  font-size: 0;
+}
+
+/* teaser: wide image on top, left-aligned title and CTA */
+.cards.teaser > ul > li {
+  border: 0;
+}
+
+.cards.teaser .cards-card-body {
+  margin: 16px 0 0;
+}
+
+.cards.teaser > ul > li img {
+  aspect-ratio: 5 / 3;
+}
+
+/* steps: numbered badge overlapping the bottom edge of each image */
+.cards.steps > ul {
+  counter-reset: cards-step;
+}
+
+.cards.steps > ul > li {
+  counter-increment: cards-step;
+  border: 0;
+  text-align: center;
+}
+
+.cards.steps .cards-card-image {
+  position: relative;
+}
+
+.cards.steps .cards-card-image::after {
+  content: counter(cards-step);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  line-height: 1;
+}
+
+.cards.steps .cards-card-body {
+  margin: 56px 16px 16px;
+}
+
+.cards.steps > ul > li img {
+  aspect-ratio: 5 / 3;
+}
+
+/* image-overlay: photo fills the card, white text sits on a dark gradient.
+ * Default (e.g. 4-up): tall tiles, title + text + white outline pill.
+ * Exactly two cards: wide rounded tiles, large title + white chevron link at the bottom. */
+.cards.image-overlay > ul {
+  gap: 20px;
+}
+
+.cards.image-overlay > ul > li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 241px;
+  overflow: hidden;
+  border: 0;
+  color: #fff;
+}
+
+.cards.image-overlay .cards-card-image {
+  position: absolute;
+  inset: 0;
+}
+
+.cards.image-overlay .cards-card-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to top, rgb(34 34 34 / 80%), rgb(34 34 34 / 0%));
+  pointer-events: none;
+}
+
+.cards.image-overlay .cards-card-image > p,
+.cards.image-overlay .cards-card-image picture,
+.cards.image-overlay > ul > li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+
+.cards.image-overlay .cards-card-body {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin: 0;
+  padding: 20px;
+}
+
+.cards.image-overlay .cards-card-body > * {
+  margin: 0;
+  color: inherit;
+}
+
+.cards.image-overlay .cards-card-body > :is(h1, h2, h3, h4, h5, h6) {
+  font-size: var(--heading-font-size-s);
+  line-height: 26px;
+}
+
+.cards.image-overlay .cards-card-body > p:not(.button-container) {
+  padding-top: 10px;
+}
+
+.cards.image-overlay .cards-card-body > .button-container {
+  padding-top: 20px;
+}
+
+main .cards.image-overlay a.button:any-link {
+  border-color: #fff;
+  padding: 13px 20px;
+  background-color: transparent;
+  color: #fff;
+}
+
+main .cards.image-overlay a.button:hover,
+main .cards.image-overlay a.button:focus-visible {
+  border-color: var(--link-color);
+  background-color: transparent;
+  color: var(--link-color);
+}
+
+/* exactly two cards: wide teaser tiles */
+.cards.image-overlay > ul:has(> li:nth-child(2):last-child) > li {
+  min-height: 227px;
+  border-radius: 6px;
+}
+
+.cards.image-overlay > ul:has(> li:nth-child(2):last-child) .cards-card-image::after {
+  background-image:
+    linear-gradient(rgb(34 34 34 / 10%), rgb(34 34 34 / 10%)),
+    linear-gradient(rgb(34 34 34 / 0%), rgb(34 34 34 / 70%));
+}
+
+.cards.image-overlay > ul:has(> li:nth-child(2):last-child) .cards-card-body {
+  padding: 0 20px 20px;
+}
+
+.cards.image-overlay > ul:has(> li:nth-child(2):last-child) .cards-card-body > :is(h1, h2, h3, h4, h5, h6) {
+  margin-bottom: 20px;
+  font-size: var(--heading-font-size-xl);
+  line-height: 36px;
+}
+
+.cards.image-overlay > ul:has(> li:nth-child(2):last-child) .cards-card-body > .button-container {
+  min-height: 26px;
+  padding-top: 0;
+}
+
+main .cards.image-overlay > ul:has(> li:nth-child(2):last-child) a.button:any-link {
+  display: inline;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background-color: transparent;
+  color: #fff;
+  line-height: 20px;
+  overflow: visible;
+}
+
+main .cards.image-overlay > ul:has(> li:nth-child(2):last-child) a.button:hover,
+main .cards.image-overlay > ul:has(> li:nth-child(2):last-child) a.button:focus-visible {
+  color: #fff;
+  text-decoration: underline;
+}
+
+main .cards.image-overlay > ul:has(> li:nth-child(2):last-child) a.button::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 15px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='12' viewBox='0 0 7 12'%3E%3Cpath fill='%23fff' d='M3.5 7.277L.269 10.464a.89.89 0 0 0 0 1.273.917.917 0 0 0 .645.263.916.916 0 0 0 .646-.263l3.233-3.188L3.5 7.277zm2.583 0l.65-.64a.89.89 0 0 0 0-1.273L1.558.264a.922.922 0 0 0-1.291 0 .89.89 0 0 0 0 1.272l4.524 4.468 1.291 1.273z'/%3E%3C/svg%3E") left center / auto 100% no-repeat;
+}
+
+/* promo-tile: single centered tile with heading, text, and one CTA */
+.cards.promo-tile > ul > li {
+  text-align: center;
+  align-items: center;
+  min-height: 360px;
+  border: 0;
+}
+
+.cards.promo-tile .cards-card-body {
+  margin: 0;
+  padding: 40px 24px;
+}
+
+/* icon-badge: photo with a round icon overlapping its bottom edge */
+.cards.icon-badge > ul > li {
+  text-align: center;
+  border: 0;
+}
+
+.cards.icon-badge .cards-card-badge {
+  position: relative;
+  z-index: 1;
+  align-self: center;
+  width: 52px;
+  height: 52px;
+  margin-top: -26px;
+  border-radius: 50%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.cards.icon-badge .cards-card-badge img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.cards.icon-badge > ul > li .cards-card-image img {
+  aspect-ratio: 5 / 3;
+}
+
+/* mobile: the stretched icon-card link must not pick up the global button hover fill */
+.cards.icon .cards-card-body a.button:hover,
+.cards.icon .cards-card-body a.button:focus-visible {
+  border-color: transparent;
+  background-color: transparent;
+  color: transparent;
+}
+
+@media (width >= 600px) {
+  .cards.image-overlay > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards.image-overlay > ul > li {
+    min-height: 350px;
+  }
+
+  .cards.image-overlay > ul:has(> li:nth-child(2):last-child) > li {
+    min-height: 244px;
+  }
+
+  /* icon: centered pictogram, title, subtitle and red outline pill CTA */
+  .cards.icon > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* stretch the body so text spans the full 40px-padded card (360px column at 1440) */
+  .cards.icon > ul > li {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .cards.icon > ul > li::after {
+    content: none;
+  }
+
+  .cards.icon .cards-card-image {
+    margin-left: 0;
+  }
+
+  .cards.icon > ul > li img {
+    width: 72px;
+    height: 72px;
+  }
+
+  .cards.icon .cards-card-body {
+    align-items: stretch;
+    padding: 0;
+  }
+
+  .cards.icon .cards-card-body > :is(h1, h2, h3, h4, h5, h6) {
+    padding: 30px 0 10px;
+    font-size: var(--heading-font-size-l);
+    line-height: 30px;
+  }
+
+  .cards.icon .cards-card-body > p:not(.button-container) {
+    display: block;
+    margin: 0 0 30px;
+  }
+
+  .cards.icon .cards-card-body a.button:any-link {
+    position: static;
+    border: 2px solid var(--link-color);
+    border-radius: 30px;
+    padding: 15px 25px;
+    background-color: transparent;
+    color: var(--link-color);
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .cards.icon .cards-card-body a.button:hover,
+  .cards.icon .cards-card-body a.button:focus-visible {
+    border-color: var(--link-color);
+    background-color: var(--link-color);
+    color: #fff;
+  }
+
+  /* card-level hover / keyboard focus: red card, white copy, white icon, white outline CTA */
+  .cards.icon > ul > li:hover,
+  .cards.icon > ul > li:focus-within {
+    background-color: var(--link-color);
+    color: #fff;
+  }
+
+  .cards.icon > ul > li:is(:hover, :focus-within) .cards-card-body > * {
+    color: #fff;
+  }
+
+  .cards.icon > ul > li:is(:hover, :focus-within) .cards-card-image img {
+    filter: brightness(0) invert(1);
+  }
+
+  .cards.icon > ul > li:is(:hover, :focus-within) .cards-card-body a.button:any-link {
+    border-color: #fff;
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .cards.icon > ul > li:is(:hover, :focus-within) .cards-card-body a.button:focus-visible {
+    outline-color: #fff;
+  }
+}
+
+@media (width >= 900px) {
+  .cards.teaser > ul,
+  .cards.steps > ul,
+  .cards.icon-badge > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cards.icon > ul > li {
+    padding: 40px;
+  }
+
+  .cards.image-overlay > ul {
+    grid-template-columns: repeat(auto-fit, minmax(257px, 1fr));
+  }
+
+  /* tall tiles: copy at the top over a top-half gradient */
+  .cards.image-overlay > ul > li {
+    min-height: 463px;
+  }
+
+  .cards.image-overlay .cards-card-image::after {
+    bottom: 50%;
+    background-image: linear-gradient(rgb(34 34 34 / 80%), rgb(34 34 34 / 0%));
+  }
+
+  .cards.image-overlay .cards-card-body {
+    justify-content: flex-start;
+  }
+
+  .cards.image-overlay .cards-card-body > :is(h1, h2, h3, h4, h5, h6) {
+    font-size: var(--heading-font-size-l);
+    line-height: 30px;
+  }
+
+  .cards.image-overlay > ul:has(> li:nth-child(2):last-child) {
+    gap: 40px;
+  }
+
+  .cards.image-overlay > ul:has(> li:nth-child(2):last-child) > li {
+    min-height: 320px;
+  }
+
+  .cards.image-overlay > ul:has(> li:nth-child(2):last-child) .cards-card-image::after {
+    bottom: 0;
+  }
+
+  .cards.image-overlay > ul:has(> li:nth-child(2):last-child) .cards-card-body {
+    justify-content: flex-end;
+    padding: 0 40px 38px;
+  }
+
+  .cards.image-overlay > ul:has(> li:nth-child(2):last-child) .cards-card-body > :is(h1, h2, h3, h4, h5, h6) {
+    font-size: var(--heading-font-size-xxl);
+    line-height: 44px;
+  }
+
+  .cards.promo-tile > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (width >= 1200px) {
+  .cards.image-overlay .cards-card-body {
+    padding: 40px;
+  }
+
+  .cards.image-overlay > ul:has(> li:nth-child(2):last-child) > li {
+    min-height: 426px;
+  }
+}
+
+@media (width >= 1440px) {
+  .cards.image-overlay > ul > li {
+    min-height: 611px;
+  }
 }

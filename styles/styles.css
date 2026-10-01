@@ -10,67 +10,25 @@
  * governing permissions and limitations under the License.
  */
 
+/* brand tokens (colors, fonts, sizes, spacing) live in brand.css, loaded from head.html */
 :root {
-  /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
-  --overlay-background-color:lightgrey;
+  --dark-color: #444;
+  --overlay-background-color: lightgrey;
 
-  /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
-
-  /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
-
-  /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
-
-  /* nav heights */
+  /* nav heights incl. the 2px divider: compact bar on mobile, utility bar (39px) + main bar (86px) on desktop */
   --nav-height: 64px;
   --breadcrumbs-height: 34px;
   --header-height: var(--nav-height);
 }
 
-/* fallback fonts */
+/* fallback fonts: Arial tuned to Noto Sans metrics to minimise layout shift on font swap */
 @font-face {
-  font-family: roboto-condensed-fallback;
-  size-adjust: 88.82%;
+  font-family: noto-sans-fallback;
+  size-adjust: 106.4%;
+  ascent-override: 100.5%;
+  descent-override: 27.5%;
+  line-gap-override: 0%;
   src: local('Arial');
-}
-
-@font-face {
-  font-family: roboto-fallback;
-  size-adjust: 99.529%;
-  src: local('Arial');
-}
-
-@media (width >= 900px) {
-  :root {
-    /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
-
-    /* heading sizes */
-    --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
-    --heading-font-size-xs: 18px;
-  }
 }
 
 body {
@@ -80,7 +38,7 @@ body {
   color: var(--text-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
-  line-height: 1.6;
+  line-height: var(--body-line-height);
 }
 
 body.appear {
@@ -102,6 +60,10 @@ footer .footer[data-block-status="loaded"] {
 }
 
 @media (width >= 900px) {
+  :root {
+    --nav-height: 127px;
+  }
+
   body[data-breadcrumbs] {
     --header-height: calc(var(--nav-height) + var(--breadcrumbs-height));
   }
@@ -113,20 +75,43 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--text-color);
   font-family: var(--heading-font-family);
-  font-weight: 600;
-  line-height: 1.25;
+  font-weight: var(--heading-font-weight);
   scroll-margin: 40px;
 }
 
-h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
-h4 { font-size: var(--heading-font-size-m); }
-h5 { font-size: var(--heading-font-size-s); }
-h6 { font-size: var(--heading-font-size-xs); }
+h1 {
+  font-size: var(--heading-font-size-xxl);
+  line-height: 44px;
+}
+
+h2 {
+  font-size: var(--heading-font-size-xl);
+  line-height: 36px;
+}
+
+h3 {
+  font-size: var(--heading-font-size-l);
+  line-height: 30px;
+}
+
+h4 {
+  font-size: var(--heading-font-size-m);
+  line-height: 28px;
+}
+
+h5 {
+  font-size: var(--heading-font-size-s);
+  line-height: 26px;
+}
+
+h6 {
+  font-size: var(--heading-font-size-xs);
+  line-height: 24px;
+}
 
 p,
 dl,
@@ -134,8 +119,8 @@ ol,
 ul,
 pre,
 blockquote {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 code,
@@ -165,58 +150,96 @@ button {
 /* links */
 a:any-link {
   color: var(--link-color);
+  font-weight: 700;
   text-decoration: none;
   overflow-wrap: break-word;
 }
 
 a:hover {
-  color: var(--link-hover-color);
+  color: var(--link-color);
   text-decoration: underline;
 }
 
-/* buttons */
+a:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+}
+
+/* buttons: primary = filled red pill, secondary = red outline pill */
+main .button-container {
+  margin: 0 0 16px;
+}
+
 a.button:any-link,
 button {
   box-sizing: border-box;
   display: inline-block;
   max-width: 100%;
-  margin: 12px 0;
-  border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
-  font-family: var(--body-font-family);
+  margin: 0;
+  border: 2px solid var(--link-color);
+  border-radius: var(--button-radius);
+  padding: var(--button-padding);
+  font-family: var(--heading-font-family);
+  font-size: 16px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 1.25;
+  font-weight: var(--heading-font-weight);
+  line-height: 16px;
   text-align: center;
   text-decoration: none;
   background-color: var(--link-color);
-  color: var(--background-color);
+  color: #fff;
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.15s ease-in-out;
 }
 
 a.button:hover,
-a.button:focus,
+a.button:focus-visible,
 button:hover,
-button:focus {
+button:focus-visible {
+  border-color: var(--link-hover-color);
   background-color: var(--link-hover-color);
-  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
 }
 
 button:disabled,
 button:disabled:hover {
+  border-color: var(--light-color);
   background-color: var(--light-color);
+  color: var(--muted-color);
   cursor: unset;
 }
 
-a.button.secondary,
+a.button.secondary:any-link,
 button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color);
+  border-color: var(--link-color);
+  background-color: transparent;
+  color: var(--link-color);
+}
+
+a.button.secondary:hover,
+a.button.secondary:focus-visible,
+button.secondary:hover,
+button.secondary:focus-visible {
+  border-color: var(--muted-color);
+  background-color: transparent;
+  color: var(--muted-color);
+}
+
+/* hidden visually but kept in the accessibility tree */
+.visually-hidden:where(:not(:focus-within, :active)) {
+  position: absolute !important;
+  clip-path: inset(50%) !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  white-space: nowrap !important;
 }
 
 main img {
@@ -238,29 +261,53 @@ main img {
 
 /* sections */
 main > .section {
-  margin: 40px 0;
+  margin: 0;
+  padding: var(--section-padding) 0 0;
+}
+
+main > .section:last-of-type {
+  padding-bottom: var(--section-padding);
 }
 
 main > .section > div {
-  max-width: 1200px;
+  max-width: var(--content-max-width);
   margin: auto;
-  padding: 0 24px;
+  padding: 0 var(--content-gutter);
+  box-sizing: border-box;
 }
 
 main > .section:first-of-type {
-  margin-top: 0;
+  padding-top: 0;
 }
 
-@media (width >= 900px) {
-  main > .section > div {
-    padding: 0 32px;
-  }
+/* default content: centered intro text, as on the source */
+main > .section > .default-content-wrapper {
+  max-width: calc(670px + 2 * var(--content-gutter));
+  text-align: center;
+}
+
+main > .section > .default-content-wrapper > :last-child {
+  margin-bottom: 0;
+}
+
+/* a heading introducing a cards block sits further from the cards */
+main > .section > .default-content-wrapper:has(+ .cards-wrapper) {
+  margin-bottom: 40px;
 }
 
 /* section metadata */
 main .section.light,
-main .section.highlight {
-  background-color: var(--light-color);
-  margin: 0;
-  padding: 40px 0;
+main .section.highlight,
+main .section.grey {
+  background-color: var(--grey-color);
+  padding: var(--section-padding) 0;
+}
+
+main .section.grey + .section.grey {
+  padding-top: 0;
+}
+
+/* a white section followed by a grey one keeps its bottom spacing */
+main > .section:not(.grey):has(+ .section.grey) {
+  padding-bottom: var(--section-padding);
 }

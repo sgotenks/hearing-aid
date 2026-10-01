@@ -40,6 +40,22 @@
           "value": "",
           "label": "Text",
           "valueType": "string"
+        },
+        {
+          "component": "select",
+          "name": "classes",
+          "value": "",
+          "label": "Options",
+          "options": [
+            {
+              "name": "Default",
+              "value": ""
+            },
+            {
+              "name": "Promo Panel",
+              "value": "promo-panel"
+            }
+          ]
         }
       ]
     }

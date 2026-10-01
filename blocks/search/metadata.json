@@ -1,0 +1,839 @@
+{
+  "variantName": "search",
+  "baseBlock": "search",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "icon",
+    "structure": "1 CTAs + image"
+  },
+  "contentPattern": {
+    "structure": "search input with submit control; optional query-index source link",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_768455167ac2",
+    "v_9d79fd7057d6"
+  ],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.amplifon.com/ca/",
+        "instanceId": "262ff089",
+        "screenshot": ".pages/www_amplifon_com_ca--cc5cd643/blocks/262ff089.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/amplifon-way",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_amplifon-way--3c283929/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/assistive-listening-devices",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_assistive-listening-devices--1b9fe59a/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/assistive-listening-devices/alarm-clocks",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_assistive-listening-devices_alarm-clocks--d4d29d6c/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/assistive-listening-devices/headphones",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_assistive-listening-devices_headphones--69b439df/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/assistive-listening-devices/headphones/noise-cancelling-headphones",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_assistive-listening-devices_headphones_noise-cancelling-headphones--ee18e68d/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/assistive-listening-devices/personal-amplifiers",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_assistive-listening-devices_personal-amplifiers--3fcac830/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/assistive-listening-devices/personal-amplifiers/all-products",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_assistive-listening-devices_personal-amplifiers_all-products--b41c6fd2/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/audiology-news/best-hearing-aids",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_audiology-news_best-hearing-aids--c9b43590/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/audiology-news/bubble-popping-noise-ear",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_audiology-news_bubble-popping-noise-ear--996f6991/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/audiology-news/first-days-with-hearing-aids",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_audiology-news_first-days-with-hearing-aids--1dd432c3/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/audiology-news/how-to-relieve-ear-pressure",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_audiology-news_how-to-relieve-ear-pressure--5cf3c285/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/audiology-news/should-i-wear-hearing-aids-all-day",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_audiology-news_should-i-wear-hearing-aids-all-day--c26428c2/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/autophony",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_autophony--56030987/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/bppv-vertigo",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_bppv-vertigo--4b5b8e62/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/bppv-vertigo/ear-crystals",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_bppv-vertigo_ear-crystals--4c5887e9/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/crackling-in-ear",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_crackling-in-ear--baa9bafc/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/dry-skin-in-ears",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_dry-skin-in-ears--5484b0c8/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/ear-barotrauma",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_ear-barotrauma--9e718114/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/ear-cancer",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_ear-cancer--627b7e62/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/ear-eczema",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_ear-eczema--880f7421/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/earache-and-headache",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_earache-and-headache--d1ed8ff4/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/fluid-in-ear",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_fluid-in-ear--29b8c1b4/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/frostbite-on-ear",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_frostbite-on-ear--e34918c6/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/how-cold-and-flu-affect-ears",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_how-cold-and-flu-affect-ears--c1de5abe/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/how-to-unclog-ears",
+        "instanceId": "7c4074f",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_how-to-unclog-ears--3e1d3a97/blocks/7c4074f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/lump-behind-ear",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_lump-behind-ear--cfa6b677/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/otitis/swimmers-ear",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_otitis_swimmers-ear--bc7ba078/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/otosclerosis",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_otosclerosis--f1517d00/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/red-and-hot-ears",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_red-and-hot-ears--4e2a6ad5/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/ruptured-eardrum",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_ruptured-eardrum--43baf0de/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/tmj-and-ear-pain",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_tmj-and-ear-pain--6ee19f8e/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/vibration-in-ear",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_vibration-in-ear--45976929/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/water-in-ear",
+        "instanceId": "7c4078d",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_water-in-ear--9d2b1647/blocks/7c4078d.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/infections-and-other-conditions/can-stress-and-anxiety-cause-vertigo-and-dizziness",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_infections-and-other-conditions_can-stress-and-anxiety-cause-vertigo-and-dizziness--f131a8f5/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/infections-and-other-conditions/ear-bleeding",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_infections-and-other-conditions_ear-bleeding--8e444df1/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/infections-and-other-conditions/food-to-cure-dizziness",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_infections-and-other-conditions_food-to-cure-dizziness--6898febf/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/infections-and-other-conditions/sinus-infection-and-ear-pain",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_infections-and-other-conditions_sinus-infection-and-ear-pain--844e937a/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/sore-throat-and-ear-pain",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_sore-throat-and-ear-pain--5360219d/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/tinnitus/cervical-tinnitus",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_tinnitus_cervical-tinnitus--1686283d/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/tinnitus/exercises-for-tinnitus",
+        "instanceId": "52548392",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_tinnitus_exercises-for-tinnitus--cb5b2205/blocks/52548392.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/tinnitus/morning-tinnitus",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_tinnitus_morning-tinnitus--5c887e31/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/tinnitus/pulsatile-tinnitus",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_tinnitus_pulsatile-tinnitus--9f162127/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aid-guide",
+        "instanceId": "7c40711",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aid-guide--4e471842/blocks/7c40711.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids--10a1a261/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits",
+        "instanceId": "6b866ef1",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits--edb36c49/blocks/6b866ef1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/affordability",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_affordability--714f3a12/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/connectivity",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_connectivity--2c807b4b/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/invisibility",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_invisibility--c0315b13/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/rechargeability",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_rechargeability--f381f90f/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/bone-anchored-hearing-devices",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_bone-anchored-hearing-devices--8f91b2d6/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/costs-and-prices",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_costs-and-prices--ba535759/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology--22c8d9a9/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/artificial-intelligence-hearing-aids",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_artificial-intelligence-hearing-aids--cf242ff3/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/best-hearing-aid-technology-for-specific-needs-or-lifestyle",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_best-hearing-aid-technology-for-specific-needs-or-lifestyle--7a7108ca/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/connectivity",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_connectivity--f179f0e5/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/connectivity/benefits-of-bluetooth-hearing-aids",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_connectivity_benefits-of-bluetooth-hearing-aids--9beb6ba1/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/connectivity/how-to-connect-laptop-and-smartwatches",
+        "instanceId": "7c40828",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_connectivity_how-to-connect-laptop-and-smartwatches--7603bc08/blocks/7c40828.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/hearing-devices-brands",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_hearing-devices-brands--0462170d/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/how-do-hearing-aids-work",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_how-do-hearing-aids-work--7c7d5cd5/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/how-do-hearing-aids-work/cros-system",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_how-do-hearing-aids-work_cros-system--e8ff4267/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/how-do-hearing-aids-work/hearing-aid-parts",
+        "instanceId": "1b24015e",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_how-do-hearing-aids-work_hearing-aid-parts--3d6caac7/blocks/1b24015e.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/learn-more-about-cochlear-implant",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_learn-more-about-cochlear-implant--f9f0f088/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance--12e74e0e/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/care-wherever-you-are",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_care-wherever-you-are--6457277c/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/care-wherever-you-are/cleaning-hearing-aids/step-by-step-guide",
+        "instanceId": "7c40711",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_care-wherever-you-are_cleaning-hearing-aids_step-by-step-guide--a440690c/blocks/7c40711.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/care-wherever-you-are/how-to-connect-hearing-aids-to-bluetooth",
+        "instanceId": "525483ef",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_care-wherever-you-are_how-to-connect-hearing-aids-to-bluetooth--2a7c0e4e/blocks/525483ef.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/care-wherever-you-are/how-to-insert-hearing-aids",
+        "instanceId": "7c407ac",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_care-wherever-you-are_how-to-insert-hearing-aids--d5268ad2/blocks/7c407ac.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/cleaning-products",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_cleaning-products--f1841fd2/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/cleaning-products/ampliclear-kits",
+        "instanceId": "52548316",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_cleaning-products_ampliclear-kits--71b5c839/blocks/52548316.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/cleaning-your-hearing-aid",
+        "instanceId": "52548335",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_cleaning-your-hearing-aid--9d41f1b0/blocks/52548335.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/hearing-aid-batteries",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_hearing-aid-batteries--9c8f3f3b/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/hearing-aid-batteries/battery-vs-rechargeable-hearing-aids",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_hearing-aid-batteries_battery-vs-rechargeable-hearing-aids--1fa5f201/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/hearing-aid-repair",
+        "instanceId": "52548335",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_hearing-aid-repair--7b4af415/blocks/52548335.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/remotes-and-wireless-accessories",
+        "instanceId": "52548316",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_remotes-and-wireless-accessories--68a17acf/blocks/52548316.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/remotes-and-wireless-accessories/resound-unite-phone-clip",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_remotes-and-wireless-accessories_resound-unite-phone-clip--6b537d20/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/small-hearing-aids",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_small-hearing-aids--f8a877f4/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/types-and-styles",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_types-and-styles--77597544/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/types-and-styles/behind-the-ear",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_types-and-styles_behind-the-ear--f29bd9e3/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/types-and-styles/in-the-ear",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_types-and-styles_in-the-ear--110eabcc/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/types-and-styles/receiver-in-canal",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_types-and-styles_receiver-in-canal--fea39ae8/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/custom-fit-hearing-aids",
+        "instanceId": "52548373",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_custom-fit-hearing-aids--ad805161/blocks/52548373.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq--732cc0da/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/best-hearing-aid-for-seniors",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_best-hearing-aid-for-seniors--a8a6b200/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/how-long-do-hearing-aids-last",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_how-long-do-hearing-aids-last--660c78d1/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/how-to-extend-hearing-aids-battery-life",
+        "instanceId": "52548316",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_how-to-extend-hearing-aids-battery-life--4ac9f9ca/blocks/52548316.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/pros-cons-invisible-hearing-aids",
+        "instanceId": "525483ef",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_pros-cons-invisible-hearing-aids--285097af/blocks/525483ef.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/pros-cons-itc-hearing-aids",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_pros-cons-itc-hearing-aids--b592671e/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/aftersales-care/hearing-aid-adjustment/routine-tune-up",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_aftersales-care_hearing-aid-adjustment_routine-tune-up--a13f5092/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/choosing-amplifon-expertise-and-services/customer-stories/hearing-aids-to-enjoy-unique-moments",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_choosing-amplifon-expertise-and-services_customer-stories_hearing-aids-to-enjoy-unique-moments--485eda3a/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/choosing-amplifon-expertise-and-services/customer-stories/hearing-aids-to-keep-on-playing-music",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_choosing-amplifon-expertise-and-services_customer-stories_hearing-aids-to-keep-on-playing-music--219e2eab/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/choosing-amplifon-expertise-and-services/customer-stories/helping-people-as-hearing-instrument-specialist",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_choosing-amplifon-expertise-and-services_customer-stories_helping-people-as-hearing-instrument-specialist--61f845ed/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/choosing-amplifon-expertise-and-services/customer-stories/making-a-difference-as-hearing-practitioner",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_choosing-amplifon-expertise-and-services_customer-stories_making-a-difference-as-hearing-practitioner--7a6d7560/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/choosing-amplifon-expertise-and-services/customer-stories/most-suitable-hearing-aid-for-every-client",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_choosing-amplifon-expertise-and-services_customer-stories_most-suitable-hearing-aid-for-every-client--2eff4f34/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/choosing-amplifon-expertise-and-services/customer-stories/new-hearing-aids-to-reconnect-with-friends",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_choosing-amplifon-expertise-and-services_customer-stories_new-hearing-aids-to-reconnect-with-friends--306316bf/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/choosing-amplifon-expertise-and-services/our-history-and-experience/miracle-ear-becomes-amplifon",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_choosing-amplifon-expertise-and-services_our-history-and-experience_miracle-ear-becomes-amplifon--84cbb8f8/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/personalised-hearing-solutions/money-back-guarantee",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_personalised-hearing-solutions_money-back-guarantee--7df6cbe0/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/personalised-hearing-tests",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_personalised-hearing-tests--893499f2/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-protection",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-protection--28630875/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-protection/our-hearing-protection-solutions",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-protection_our-hearing-protection-solutions--b10be11d/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-protection/our-hearing-protection-solutions/earplugs-for-concerts",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-protection_our-hearing-protection-solutions_earplugs-for-concerts--9ed8a95f/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-protection/our-hearing-protection-solutions/earplugs-for-motorcycle",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-protection_our-hearing-protection-solutions_earplugs-for-motorcycle--a3dea6a3/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-protection/our-hearing-protection-solutions/musician-ear-plugs",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-protection_our-hearing-protection-solutions_musician-ear-plugs--5f9fdcac/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss--e4cd1df8/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-loss-prevention/vitamins-to-improve-hearing-health",
+        "instanceId": "52548392",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-loss-prevention_vitamins-to-improve-hearing-health--28ff205c/blocks/52548392.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/types-of-hearing-loss/anacusis",
+        "instanceId": "52548373",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_types-of-hearing-loss_anacusis--cd5c1e66/blocks/52548373.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/types-of-hearing-loss/conductive-hearing-loss",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_types-of-hearing-loss_conductive-hearing-loss--e91d2a83/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/types-of-hearing-loss/sudden-hearing-loss",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_types-of-hearing-loss_sudden-hearing-loss--d0b17d30/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/audiology-news/can-hearing-aids-cause-vertigo-",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_audiology-news_can-hearing-aids-cause-vertigo---ecc295aa/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss--e4cfd03d/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/dementia-and-hearing-loss",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_dementia-and-hearing-loss--ae8302d6/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions--40135c21/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/how-to-unclog-ears",
+        "instanceId": "525482f7",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_how-to-unclog-ears--3e1d3a97/blocks/525482f7.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/how-to-unclog-ears/valsalva-maneuver",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_how-to-unclog-ears_valsalva-maneuver--5ed46694/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/pimple-in-ear",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_pimple-in-ear--ec8aec31/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/water-in-ear",
+        "instanceId": "525482f7",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_water-in-ear--9d2b1647/blocks/525482f7.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/eustachian-tube-dysfunction",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_eustachian-tube-dysfunction--7346f12d/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/tinnitus/exercises-for-tinnitus",
+        "instanceId": "525482f7",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_tinnitus_exercises-for-tinnitus--cb5b2205/blocks/525482f7.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aid-guide",
+        "instanceId": "525483d0",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aid-guide--4e471842/blocks/525483d0.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/connectivity/how-to-connect-laptop-and-smartwatches",
+        "instanceId": "52548354",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_connectivity_how-to-connect-laptop-and-smartwatches--7603bc08/blocks/52548354.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/how-do-hearing-aids-work",
+        "instanceId": "52548316",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_how-do-hearing-aids-work--7c7d5cd5/blocks/52548316.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/how-do-hearing-aids-work/hearing-aid-parts/wax-guard",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_how-do-hearing-aids-work_hearing-aid-parts_wax-guard--18621ce1/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/care-wherever-you-are/cleaning-hearing-aids",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_care-wherever-you-are_cleaning-hearing-aids--f513ef24/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/care-wherever-you-are/cleaning-hearing-aids/step-by-step-guide",
+        "instanceId": "525483d0",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_care-wherever-you-are_cleaning-hearing-aids_step-by-step-guide--a440690c/blocks/525483d0.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/care-wherever-you-are/faqs-and-tutorials",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_care-wherever-you-are_faqs-and-tutorials--ed605477/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/care-wherever-you-are/hearing-aid-troubleshooting",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_care-wherever-you-are_hearing-aid-troubleshooting--7df0819e/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/care-wherever-you-are/how-to-connect-hearing-aids-to-bluetooth",
+        "instanceId": "525482f7",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_care-wherever-you-are_how-to-connect-hearing-aids-to-bluetooth--2a7c0e4e/blocks/525482f7.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/care-wherever-you-are/how-to-insert-hearing-aids",
+        "instanceId": "525483ef",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_care-wherever-you-are_how-to-insert-hearing-aids--d5268ad2/blocks/525483ef.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/care-wherever-you-are/how-to-turn-hearing-aids-on-off",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_care-wherever-you-are_how-to-turn-hearing-aids-on-off--f02ea864/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/cleaning-products/ampliclear-kits",
+        "instanceId": "52548392",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_cleaning-products_ampliclear-kits--71b5c839/blocks/52548392.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/cleaning-your-hearing-aid",
+        "instanceId": "7c40730",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_cleaning-your-hearing-aid--9d41f1b0/blocks/7c40730.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/hearing-aid-chargers",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_hearing-aid-chargers--1af754c6/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/hearing-aid-repair",
+        "instanceId": "7c4076e",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_hearing-aid-repair--7b4af415/blocks/7c4076e.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/when-to-replace-your-hearing-aids",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_when-to-replace-your-hearing-aids--3a5be70a/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/remotes-and-wireless-accessories",
+        "instanceId": "7c40730",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_remotes-and-wireless-accessories--68a17acf/blocks/7c40730.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids--050ddaaf/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/can-hearing-aids-cause-vertigo",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_can-hearing-aids-cause-vertigo--196d4fc8/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/exercise-and-workout",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_exercise-and-workout--59c9c407/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/how-to-extend-hearing-aids-battery-life",
+        "instanceId": "52548392",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_how-to-extend-hearing-aids-battery-life--4ac9f9ca/blocks/52548392.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/pros-cons-invisible-hearing-aids",
+        "instanceId": "7c40730",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_pros-cons-invisible-hearing-aids--285097af/blocks/7c40730.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/tips-for-travelling",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_tips-for-travelling--04bd8ba2/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/glasses-with-hearing-aids",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_glasses-with-hearing-aids--84801591/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/aftersales-care/hearing-aid-adjustment",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_aftersales-care_hearing-aid-adjustment--a71d4fad/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/aftersales-care/service-plan",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_aftersales-care_service-plan--f6ea6b2b/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-protection/our-hearing-protection-solutions/ear-plugs-for-swimming",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-protection_our-hearing-protection-solutions_ear-plugs-for-swimming--18dd975f/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-protection/our-hearing-protection-solutions/earplugs-for-sleeping",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-protection_our-hearing-protection-solutions_earplugs-for-sleeping--774515f2/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-protection/our-hearing-protection-solutions/shooting-and-hunting-ear-protection",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-protection_our-hearing-protection-solutions_shooting-and-hunting-ear-protection--6a6a2a2a/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-impairment-with-age",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-impairment-with-age--68aa9999/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-loss-causes/is-ear-wax-causing-my-hearing-loss",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-loss-causes_is-ear-wax-causing-my-hearing-loss--1936e06f/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-loss-indicators",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-loss-indicators--70867a5d/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-loss-prevention/ears-cleaning/ear-wax",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-loss-prevention_ears-cleaning_ear-wax--8070bbd9/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-loss-prevention/ears-cleaning/hydrogen-peroxide-in-ear",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-loss-prevention_ears-cleaning_hydrogen-peroxide-in-ear--7413653c/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-loss-prevention/improve-hearing",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-loss-prevention_improve-hearing--237f4ced/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-loss-prevention/lifesytle-tips-to-prevent-deafness",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-loss-prevention_lifesytle-tips-to-prevent-deafness--d9db127f/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-loss-prevention/vitamins-to-improve-hearing-health",
+        "instanceId": "52548335",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-loss-prevention_vitamins-to-improve-hearing-health--28ff205c/blocks/52548335.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-loss-symptoms",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-loss-symptoms--614c4238/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/how-hearing-works",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_how-hearing-works--24321961/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/how-hearing-works/ear-parts",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_how-hearing-works_ear-parts--9388adc1/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/how-hearing-works/ear-parts/temporal-bone",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_how-hearing-works_ear-parts_temporal-bone--da2db06e/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/how-hearing-works/stapedial-reflex",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_how-hearing-works_stapedial-reflex--d54fbd15/blocks/79e63a04.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/types-of-hearing-loss/anacusis",
+        "instanceId": "7c4074f",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_types-of-hearing-loss_anacusis--cd5c1e66/blocks/7c4074f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/types-of-hearing-loss/muffled-hearing-loss-in-one-ear",
+        "instanceId": "79e63a04",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_types-of-hearing-loss_muffled-hearing-loss-in-one-ear--a6b9f48e/blocks/79e63a04.jpg"
+      }
+    ],
+    "reuseCount": 162,
+    "lastUsed": "2026-10-01T13:39:19.674Z"
+  }
+}

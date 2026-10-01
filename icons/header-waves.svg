@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="389" height="126" viewBox="0 0 389 126">
+    <defs>
+        <path id="a" d="M0 0h389v126H0z"/>
+        <filter id="b" width="100.1%" height="101.1%" x="0%" y="-.5%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="0 0"/>
+        </filter>
+        <filter id="d" width="100.1%" height="101.1%" x="0%" y="-.5%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="0 -0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="c" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <path stroke="#E6E7E9" stroke-width="2" d="M-122.396 157.959c175.985 0 175.985-132.242 351.971-132.242 175.983 0 175.983 140.557 351.965 140.557 175.986 0 175.986-186.971 351.972-186.971 175.984 0 175.984 186.97 351.968 186.97 175.992 0 175.992-154.659 351.983-154.659 175.983 0 175.983 154.66 351.966 154.66 63.724 0 104.374-24.515 138.66-55.792" filter="url(#b)" mask="url(#c)"/>
+        <path stroke="#888" stroke-width="2" d="M-38.729 133.2c185.8 0 185.8-132.242 371.6-132.242 185.796 0 185.796 140.557 371.593 140.557 185.8 0 185.8-186.971 371.6-186.971 185.797 0 185.797 186.971 371.596 186.971 185.806 0 185.806-154.66 371.612-154.66 185.796 0 185.796 154.66 371.593 154.66 67.277 0 110.194-24.515 146.393-55.792" filter="url(#d)" mask="url(#c)" opacity=".4"/>
+    </g>
+</svg>

@@ -1,0 +1,31 @@
+{
+  "variantName": "embed",
+  "baseBlock": "embed",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "icon",
+    "structure": "heading + text + 2 CTAs + 4 images + list"
+  },
+  "contentPattern": {
+    "structure": "single embed URL (link), optional placeholder image"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_a34da8f18998"
+  ],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/amplifon-store-map",
+        "instanceId": "75465f9d",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_amplifon-store-map--30089f59/blocks/75465f9d.jpg"
+      }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-01T13:39:19.105Z"
+  }
+}

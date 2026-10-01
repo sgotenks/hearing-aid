@@ -33,6 +33,30 @@
           "name": "rows",
           "value": "",
           "label": "Rows"
+        },
+        {
+          "component": "select",
+          "name": "classes",
+          "value": "",
+          "label": "Options",
+          "options": [
+            {
+              "name": "Default",
+              "value": ""
+            },
+            {
+              "name": "Media Text",
+              "value": "media-text"
+            },
+            {
+              "name": "Cta Strip",
+              "value": "cta-strip"
+            },
+            {
+              "name": "Images",
+              "value": "images"
+            }
+          ]
         }
       ]
     }
@@ -40,11 +64,18 @@
   "filters": [
     {
       "id": "columns",
-      "components": ["column"]
+      "components": [
+        "column"
+      ]
     },
     {
       "id": "column",
-      "components": ["text", "image", "button", "title"]
+      "components": [
+        "text",
+        "image",
+        "button",
+        "title"
+      ]
     }
   ]
 }

@@ -1,27 +1,150 @@
-/* search box */
+/*
+ * Search strip: heading (section default content) + white pill field with a
+ * red pill "submit" on the right, as on the source "Find your nearest hearing
+ * clinic today." strip. Values from migration-work/search-extracted.css.
+ */
+
+/* section layout (only sections that contain a search block) */
+main > .section.search-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+main > .section.search-container > .default-content-wrapper h2 {
+  margin: 0 0 20px;
+  font-size: 22px;
+  line-height: 36px;
+}
+
+/* search box: white pill field */
 .search .search-box {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1ch;
+  display: flex;
   align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  margin: 0; /* reset the UA form margin-bottom (1em) */
+  padding: 3px 12px 0 0;
+  border: 2px solid #e6e7e9;
+  border-radius: var(--button-radius);
+  background-color: var(--background-color);
+}
+
+/* field ring only while typing; the submit button draws its own ring */
+.search .search-box:has(.search-input:focus) {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
 }
 
 .search .search-box input {
   box-sizing: border-box;
   display: block;
-  width: 100%;
-  margin: 0;
-  padding: 0.5em;
-  border-radius: 4px;
-  border: 1px solid var(--dark-color);
-  background-color: var(--background-color);
+  flex-grow: 1;
+  min-width: 0;
+  max-width: 95%;
+  height: 43px;
+  margin: 0 0 0 15px;
+  padding: 0 7px 4px 0;
+  border: 0;
+  outline: none;
+  appearance: none;
+  background-color: transparent;
   color: var(--text-color);
-  font-size: var(--body-font-size-s);
-  transition: border-color 0.2s;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height);
 }
 
-.search .search-box input:hover {
-  border: 1px solid var(--text-color);
+.search .search-box input::placeholder {
+  color: var(--muted-color);
+  opacity: 1;
+}
+
+.search .search-box input::-webkit-search-decoration {
+  appearance: none;
+}
+
+/* submit button rendered as the small filled red pill on the right
+   (source: button.sl-search-button); overrides the global button rules */
+.search .search-box .search-button {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 70px;
+  max-width: none;
+  height: 30px;
+  margin: 0 0 4px;
+  padding: 2px 26.5px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: var(--link-color);
+  line-height: 0;
+}
+
+/* source hover: rgb(68, 68, 68) fill, border stays transparent */
+.search .search-box .search-button:hover {
+  border-color: transparent;
+  background-color: var(--link-hover-color);
+}
+
+/* keyboard focus ring (same treatment as links); fill stays red as on source */
+.search .search-box .search-button:focus-visible {
+  border-color: transparent;
+  background-color: var(--link-color);
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+}
+
+.search .search-box .search-button:hover:focus-visible {
+  background-color: var(--link-hover-color);
+}
+
+.search .search-box .search-button .icon-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (width >= 900px) {
+  /* heading left, pill field right, centered as a row */
+  main > .section.search-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    padding-inline: var(--content-gutter);
+  }
+
+  main > .section.search-container > .default-content-wrapper,
+  main > .section.search-container > .search-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  main > .section.search-container > .default-content-wrapper {
+    flex: 0 1 auto;
+    max-width: none;
+    margin-right: 20px;
+  }
+
+  /* (50px field - 36px line-height) / 2 keeps the heading centered on the field */
+  main > .section.search-container > .default-content-wrapper h2 {
+    margin: 7px 0 0;
+    font-size: var(--heading-font-size-xl);
+  }
+
+  main > .section.search-container > .search-wrapper {
+    flex: 0 1 510px;
+    min-width: 0;
+  }
+
+  .search .search-box input {
+    margin-left: 20px;
+  }
 }
 
 /* search results */
@@ -35,6 +158,11 @@
 
 .search ul.search-results > li {
   border: 1px solid #dadada;
+}
+
+/* collapse the empty results list so it adds no space under the field */
+.search ul.search-results:empty {
+  display: none;
 }
 
 .search ul.search-results > li > a {
@@ -134,4 +262,14 @@
   height: 24px;
   width: 24px;
   border-radius: 50%;
+}
+
+/* white search glyph inside the red pill; the SVG path fills ~77% of its
+   24px viewBox, so 20px renders the source's 15px-wide glyph */
+.search .search-box .icon-search img {
+  flex-shrink: 0;
+  width: 20px;
+  max-width: none;
+  height: 20px;
+  filter: brightness(0) invert(1);
 }

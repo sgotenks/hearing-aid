@@ -1,0 +1,1717 @@
+{
+  "variantName": "accordion",
+  "baseBlock": "accordion",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "noimg",
+    "structure": "heading + text + list"
+  },
+  "contentPattern": {
+    "structure": "repeating rows; each item: title cell (question/heading) + body cell (text, optional list, images, CTAs)"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_b8c4039015f2",
+    "v_2125317c1a4d",
+    "v_1f2bac145090",
+    "v_d7b2c1fa8179",
+    "v_3ce952985db3",
+    "v_ede06b7ca5ff-1",
+    "v_0b8fdb0d7acb",
+    "v_0b8fdb0d7acb-1",
+    "v_c626332f989a",
+    "v_ede06b7ca5ff-2",
+    "v_92dca698bd5b",
+    "v_ede06b7ca5ff"
+  ],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-abbotsford-bc/amplifon-abbotsford-s90001A76",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-abbotsford-bc_amplifon-abbotsford-s90001A76--9a7b017b/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-barrie-on/amplifon-barrie-atrium-professional-centre-s90001B12",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-barrie-on_amplifon-barrie-atrium-professional-centre-s90001B12--33357f16/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-bowmanville-on/amplifon-222-king-st-e-s90001C11",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-bowmanville-on_amplifon-222-king-st-e-s90001C11--c48818dc/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-brampton-on/amplifon-brampton-queen-street-east-s90001B08",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-brampton-on_amplifon-brampton-queen-street-east-s90001B08--7cb6cb1e/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-brantford-on/amplifon-clinic-brantford-221-brant-ave-s90001C44",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-brantford-on_amplifon-clinic-brantford-221-brant-ave-s90001C44--9584591d/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-brockville-on/amplifon-brockville-king-street-east-s90001B21",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-brockville-on_amplifon-brockville-king-street-east-s90001B21--ba9b1062/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-burlington-on/amplifon-clinic-burlington-2951-walkers-line-main-floor-s90001C43",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-burlington-on_amplifon-clinic-burlington-2951-walkers-line-main-floor-s90001C43--8067ffbe/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-burnaby-bc/605-4980-kingsway-s90001B90",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-burnaby-bc_605-4980-kingsway-s90001B90--9329e0ac/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-calgary-ab/amplifon-calgary-beddington-s90001B01",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-calgary-ab_amplifon-calgary-beddington-s90001B01--eb25065a/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-calgary-ab/amplifon-calgary-lake-bonavista-promenade-mall-s90001A93",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-calgary-ab_amplifon-calgary-lake-bonavista-promenade-mall-s90001A93--9fef3b46/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-calgary-ab/amplifon-calgary-rockyview-health-center-s90001A77",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-calgary-ab_amplifon-calgary-rockyview-health-center-s90001A77--e004b770/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-calgary-ab/amplifon-calgary-sunridge-s90001C38",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-calgary-ab_amplifon-calgary-sunridge-s90001C38--aa36d74b/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-cambridge-on/amplifon-clinic-105-182-pinebush-rd-s90001C45",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-cambridge-on_amplifon-clinic-105-182-pinebush-rd-s90001C45--506375e4/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-cambridge-on/amplifon-clinic-7-grand-ave-s-107-s90001C40",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-cambridge-on_amplifon-clinic-7-grand-ave-s-107-s90001C40--8d5967c8/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-camrose-ab/amplifon-clinic-at-camrose-s90001B80",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-camrose-ab_amplifon-clinic-at-camrose-s90001B80--6814ca0d/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-carbonear-nl/amplifon-clinic-carbonear-52-powell-dr-unit-4-s90001C60",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-carbonear-nl_amplifon-clinic-carbonear-52-powell-dr-unit-4-s90001C60--aa311499/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-casselman-on/amplifon-casselman-672-principale-st-s90001C07",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-casselman-on_amplifon-casselman-672-principale-st-s90001C07--1d934003/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-chatham-on/amplifon-chatham-queen-street-s90001B42",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-chatham-on_amplifon-chatham-queen-street-s90001B42--924cf548/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-chestermere-ab/amplifon-clinic-at-300-merganser-drive-west-s90001B60",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-chestermere-ab_amplifon-clinic-at-300-merganser-drive-west-s90001B60--8d75f6af/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-chilliwack-bc/amplifon-chilliwack-hodgins-avenue-s90001A78",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-chilliwack-bc_amplifon-chilliwack-hodgins-avenue-s90001A78--6e3f9197/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-cobourg-on/amplifon-cobourg-burnham-s90001B78",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-cobourg-on_amplifon-cobourg-burnham-s90001B78--bd7bb188/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-courtice-on/amplifon-courtice-courtice-health-centre-s90001B25",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-courtice-on_amplifon-courtice-courtice-health-centre-s90001B25--d6fbc4eb/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-dartmouth-ns/99-wyse-road-suite-102-s90001C35",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-dartmouth-ns_99-wyse-road-suite-102-s90001C35--f890e571/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-dorchester-on/amplifon-dorchester-dorchester-road-s90001B44",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-dorchester-on_amplifon-dorchester-dorchester-road-s90001B44--bf123f28/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-drayton-valley-ab/amplifon-drayton-valley-51-street-s90001C15",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-drayton-valley-ab_amplifon-drayton-valley-51-street-s90001C15--45d917bf/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-edmonton-ab/amplifon-edmonton-boonie-doon-82-avenue-nw-s90001C16",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-edmonton-ab_amplifon-edmonton-boonie-doon-82-avenue-nw-s90001C16--a2c2b1c8/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-edmonton-ab/amplifon-edmonton-lendrum-centre-s90001A95",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-edmonton-ab_amplifon-edmonton-lendrum-centre-s90001A95--c43e790b/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-edmonton-ab/amplifon-edmonton-northeast-137-avenue-s90001C19",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-edmonton-ab_amplifon-edmonton-northeast-137-avenue-s90001C19--d079e078/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-edmonton-ab/amplifon-edmonton-riverbend-square-s90001C20",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-edmonton-ab_amplifon-edmonton-riverbend-square-s90001C20--5a77ca66/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-edmonton-ab/amplifon-edmonton-west-end-medical-building-s90001C21",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-edmonton-ab_amplifon-edmonton-west-end-medical-building-s90001C21--5183fdba/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-edmonton-ab/amplifon-heritage-square-23-avenue-nw-s90001C17",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-edmonton-ab_amplifon-heritage-square-23-avenue-nw-s90001C17--b0b04eac/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-fort-mcmurray-ab/8600-franklin-avenue-river-city-centre-s90001B86",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-fort-mcmurray-ab_8600-franklin-avenue-river-city-centre-s90001B86--ac5c4f8c/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-fort-st-john-bc/amplifon-fort-st-john-100th-avenue-s90001A98",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-fort-st-john-bc_amplifon-fort-st-john-100th-avenue-s90001A98--4e3fa4c0/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-grande-prairie-ab/amplifon-grande-prairie-s90001A97",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-grande-prairie-ab_amplifon-grande-prairie-s90001A97--3b856b38/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-gravenhurst-on/amplifon-gravenhurst-241-brock-st-s90001C65",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-gravenhurst-on_amplifon-gravenhurst-241-brock-st-s90001C65--1b6064c4/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-haliburton-on/amplifon-clinic-haliburton-8c-83-maple-ave-s90001C48",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-haliburton-on_amplifon-clinic-haliburton-8c-83-maple-ave-s90001C48--852f95b4/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-halifax-ns/amplifon-clinic-halifax-7105-chebucto-road-suite-100-s90001C61",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-halifax-ns_amplifon-clinic-halifax-7105-chebucto-road-suite-100-s90001C61--617fd753/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-hanover-on/amplifon-hanover-10th-street-s90001B11",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-hanover-on_amplifon-hanover-10th-street-s90001B11--dbb853fa/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-humboldt-sk/amplifon-clinic-at-canalta-hotel-humboldt-p90001B64",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-humboldt-sk_amplifon-clinic-at-canalta-hotel-humboldt-p90001B64--f6a0c0c7/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-ingersoll-on/amplifon-ingersoll-thames-street-south-s90001B13",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-ingersoll-on_amplifon-ingersoll-thames-street-south-s90001B13--2e4579e2/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-kamloops-bc/amplifon-kamloops-columbia-street-s90001A79",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-kamloops-bc_amplifon-kamloops-columbia-street-s90001A79--1386cfad/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-kelowna-on/amplifon-clinic-at-kelowna-s90001B79",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-kelowna-on_amplifon-clinic-at-kelowna-s90001B79--8d9d8737/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-kemptville-on/amplifon-clinic-kemptville-county-road-43-s90001C37",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-kemptville-on_amplifon-clinic-kemptville-county-road-43-s90001C37--99d68d77/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-keswick-on/amplifon-keswick-the-queensway-south-s90001B36",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-keswick-on_amplifon-keswick-the-queensway-south-s90001B36--002a7398/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-kingston-on/amplifon-kingston-bayridge-centre-west-s90001B05",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-kingston-on_amplifon-kingston-bayridge-centre-west-s90001B05--1044dea2/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-kingsville-on/amplifon-kingsville-main-street-west-plaza-s90001B18",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-kingsville-on_amplifon-kingsville-main-street-west-plaza-s90001B18--b3e06271/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-komoka-on/amplifon-komoka-glendon-drive-s90001B43",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-komoka-on_amplifon-komoka-glendon-drive-s90001B43--4c60a3fe/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-lacombe-ab/amplifon-49b-avenue-lacombe-s90001C22",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-lacombe-ab_amplifon-49b-avenue-lacombe-s90001C22--34005333/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-langley-bc/amplifon-langley-logan-avenue-s90001A80",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-langley-bc_amplifon-langley-logan-avenue-s90001A80--d8a91492/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-lethbridge-ab/amplifon-lethbridge-fairway-road-south-s90001B89",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-lethbridge-ab_amplifon-lethbridge-fairway-road-south-s90001B89--d9d5869f/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-listowel-on/amplifon-listowel-main-street-west-s90001B03",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-listowel-on_amplifon-listowel-main-street-west-s90001B03--5bcd2b66/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-london-on/amplifon-london-wharncliffe-road-north-s90001B06",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-london-on_amplifon-london-wharncliffe-road-north-s90001B06--43064c31/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-lower-sackville-ns/294-cobequid-rd-suite-10-s90001C34",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-lower-sackville-ns_294-cobequid-rd-suite-10-s90001C34--6e914fbe/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-maple-ridge-bc/amplifon-maple-ridge-westgate-shopping-centre-s90001A81",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-maple-ridge-bc_amplifon-maple-ridge-westgate-shopping-centre-s90001A81--9bd06703/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-midland-on/240-penetanguishene-road-s90001C68",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-midland-on_240-penetanguishene-road-s90001C68--437f81fe/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-milton-on/amplifon-milton-3-497-laurier-avenue-s90001B85",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-milton-on_amplifon-milton-3-497-laurier-avenue-s90001B85--27764481/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-minden-on/amplifon-clinic-minden-41-bobcaygeon-rd-s90001C50",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-minden-on_amplifon-clinic-minden-41-bobcaygeon-rd-s90001C50--fdeddc40/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-mississauga-on/1077-north-service-road-s90001C69",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-mississauga-on_1077-north-service-road-s90001C69--0dca8901/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-mississauga-on/5600-explorer-s90001B84",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-mississauga-on_5600-explorer-s90001B84--3c90f820/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-mississauga-on/amplifon-mississauga-queensway-west-s90001B09",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-mississauga-on_amplifon-mississauga-queensway-west-s90001B09--2a56bac5/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-nanaimo-bc/amplifon-nanaimo-country-club-centre-s90001A91",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-nanaimo-bc_amplifon-nanaimo-country-club-centre-s90001A91--2a724d13/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-napanee-on/amplifon-napanee-bridge-street-west-s90001B15",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-napanee-on_amplifon-napanee-bridge-street-west-s90001B15--a33be555/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-new-westminster-bc/amplifon-new-westminster-columbia-st-s90001A82",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-new-westminster-bc_amplifon-new-westminster-columbia-st-s90001A82--2d0b6878/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-newcastle-on/amplifon-300-king-ave-east-s90001C12",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-newcastle-on_amplifon-300-king-ave-east-s90001C12--ac8edd97/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-newmarket-on/679-davis-dr-s90001B98",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-newmarket-on_679-davis-dr-s90001B98--986804a4/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-niagara-falls-on/amplifon-niagara-falls-drummond-road-s90001B10",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-niagara-falls-on_amplifon-niagara-falls-drummond-road-s90001B10--501f5d68/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-north-vancouver-bc/amplifon-clinic-north-vancouver-s90001A83",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-north-vancouver-bc_amplifon-clinic-north-vancouver-s90001A83--29cf7223/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-north-york-on/1448-lawrence-ave-east-s90001C71",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-north-york-on_1448-lawrence-ave-east-s90001C71--5fbdfbe9/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-oakville-on/1011-upper-middle-road-east-s90001C70",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-oakville-on_1011-upper-middle-road-east-s90001C70--94389bee/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-oakville-on/amplifon-oakville-postmaster-drive-s90001B14",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-oakville-on_amplifon-oakville-postmaster-drive-s90001B14--c9752f44/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-orillia-on/210-memorial-ave-s90001C66",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-orillia-on_210-memorial-ave-s90001C66--05923430/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-orleans-on/260-centrum-boulevard-s90001C05",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-orleans-on_260-centrum-boulevard-s90001C05--82d42039/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-oshawa-on/amplifon-oshawa-s90001B23",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-oshawa-on_amplifon-oshawa-s90001B23--2ec962ba/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-oshawa-on/amplifon-oshawa-taunton-s90001B24",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-oshawa-on_amplifon-oshawa-taunton-s90001B24--5593a06b/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-ottawa-on/1929-russell-road-s90001B87",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-ottawa-on_1929-russell-road-s90001B87--87f328fa/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-parksville-bc/amplifon-parksville-104-middleton-ave-s90001C74",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-parksville-bc_amplifon-parksville-104-middleton-ave-s90001C74--08cb6baf/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-parry-sound-on/amplifon-clinic-parry-sound-17-james-st-s90001C52",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-parry-sound-on_amplifon-clinic-parry-sound-17-james-st-s90001C52--00b6bc11/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-peace-river-ab/amplifon-peace-river-96-st-s90001C23",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-peace-river-ab_amplifon-peace-river-96-st-s90001C23--7d103f25/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-penetanguishene-on/101-thompsons-road-s90001C67",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-penetanguishene-on_101-thompsons-road-s90001C67--272311a5/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-port-dover-on/amplifon-clinic-port-dover-s90001C53",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-port-dover-on_amplifon-clinic-port-dover-s90001C53--94568802/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-port-elgin-on/amplifon-port-elgin-port-elgin-square-s90001B29",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-port-elgin-on_amplifon-port-elgin-port-elgin-square-s90001B29--0ff324f8/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-port-perry-on/amplifon-port-perry-simcoe-street-s90001B35",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-port-perry-on_amplifon-port-perry-simcoe-street-s90001B35--8a0cc529/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-prince-albert-sk/amplifon-clinic-at-coronet-hotel-p90001B55",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-prince-albert-sk_amplifon-clinic-at-coronet-hotel-p90001B55--0e995e18/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-prince-rupert-bc/amplifon-prince-rupert-201-515-3rd-avenue-west-s90001C64",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-prince-rupert-bc_amplifon-prince-rupert-201-515-3rd-avenue-west-s90001C64--5d28c6b4/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-qualicum-beach-bc/amplifon-clinic-qualicum-2692-beach-rd-s90001C75",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-qualicum-beach-bc_amplifon-clinic-qualicum-2692-beach-rd-s90001C75--b9e37c6f/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-red-deer-ab/amplifon-red-deer-48-street-s90001C25",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-red-deer-ab_amplifon-red-deer-48-street-s90001C25--44df7a64/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-regina-sk/2-4519-gordon-road-s90001B74",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-regina-sk_2-4519-gordon-road-s90001B74--4bd3d1b6/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-richmond-bc/amplifon-richmond-gilbert-road-s90001A84",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-richmond-bc_amplifon-richmond-gilbert-road-s90001A84--f631e0d2/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-richmond-hill-on/250-harding-blvd-w-s90001B99",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-richmond-hill-on_250-harding-blvd-w-s90001B99--ae42df86/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-rockland-on/2741-chamberland-st-s90001C06",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-rockland-on_2741-chamberland-st-s90001C06--3816db59/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-saskatoon-sk/amplifon-saskatoon-2nd-avenue-south-s90001A99",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-saskatoon-sk_amplifon-saskatoon-2nd-avenue-south-s90001A99--5de9e059/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-scarborough-on/2636-eglinton-ave-e-s90001B95",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-scarborough-on_2636-eglinton-ave-e-s90001B95--e5612077/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-scarborough-on/6-rylander-blvd-s90001B96",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-scarborough-on_6-rylander-blvd-s90001B96--0d74a2ee/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-selkirk-mb/amplifon-clinic-selkirk-s90001C02",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-selkirk-mb_amplifon-clinic-selkirk-s90001C02--90a5f5d8/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-sherwood-park-ab/amplifon-sherwood-park-501-bethel-drive-s90001C26",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-sherwood-park-ab_amplifon-sherwood-park-501-bethel-drive-s90001C26--3353b50b/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-simcoe-on/amplifon-simcoe-malo-professional-building-s90001B33",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-simcoe-on_amplifon-simcoe-malo-professional-building-s90001B33--897cc5c6/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-south-surrey-bc/amplifon-south-surrey-peninsula-village-s90001A90",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-south-surrey-bc_amplifon-south-surrey-peninsula-village-s90001A90--02ad7e79/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-spruce-grove-ab/amplifon-spruce-grove-mcleod-ave-s90001C27",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-spruce-grove-ab_amplifon-spruce-grove-mcleod-ave-s90001C27--42e5be9c/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-st-albert-ab/amplifon-31-liberton-drive-s90001C28",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-st-albert-ab_amplifon-31-liberton-drive-s90001C28--415dcbb8/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-st-catharines-on/amplifon-st-catharines-grantham-plaza-s90001B30",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-st-catharines-on_amplifon-st-catharines-grantham-plaza-s90001B30--0c4df4ee/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-st-john's-nl/11-elizabeth-ave-suite-202-s90001C59",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-st-john_s-nl_11-elizabeth-ave-suite-202-s90001C59--bca163d3/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-st-thomas-on/amplifon-clinic-st-thomas-120-centre-street-s90001C73",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-st-thomas-on_amplifon-clinic-st-thomas-120-centre-street-s90001C73--76d2b632/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-st-thomas-on/amplifon-st-thomas-first-ave-s90001B46",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-st-thomas-on_amplifon-st-thomas-first-ave-s90001B46--508d5de9/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-stoney-creek-on/amplifon-stoney-creek-35-upper-centennial-pkwy-suite-1a-s90001C57",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-stoney-creek-on_amplifon-stoney-creek-35-upper-centennial-pkwy-suite-1a-s90001C57--a86b1178/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-stony-plain-ab/amplifon-clinic-at-stony-plain-s90001B81",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-stony-plain-ab_amplifon-clinic-at-stony-plain-s90001B81--b8edc398/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-stouffville-on/amplifon-stouffville-main-street-s90001B34",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-stouffville-on_amplifon-stouffville-main-street-s90001B34--0eaa0ce3/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-stratford-on/amplifon-stratford-jenny-trout-centre-s90001B04",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-stratford-on_amplifon-stratford-jenny-trout-centre-s90001B04--08413f96/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-strathroy-on/amplifon-strathroy-metcalfe-street-west-s90001B41",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-strathroy-on_amplifon-strathroy-metcalfe-street-west-s90001B41--6156c2ae/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-surrey-bc/amplifon-surrey-101-avenue-s90001A89",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-surrey-bc_amplifon-surrey-101-avenue-s90001A89--f015bbe0/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-terrace-bc/4550-lakelse-ave-s90001B94",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-terrace-bc_4550-lakelse-ave-s90001B94--b047ba80/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-thorold-on/amplifon-thorold-merrittville-highway-s90001B32",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-thorold-on_amplifon-thorold-merrittville-highway-s90001B32--d59c57c3/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-thunder-bay-on/amplifon-thunder-bay-memorial-ave-s90001B26",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-thunder-bay-on_amplifon-thunder-bay-memorial-ave-s90001B26--7992eef0/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-toronto-danforth-on/886-danforth-ave-s90001B92",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-toronto-danforth-on_886-danforth-ave-s90001B92--3bfbb612/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-toronto-on/amplifon-clinic-bayview-village-27-rean-drive-unit-6-s90001C36",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-toronto-on_amplifon-clinic-bayview-village-27-rean-drive-unit-6-s90001C36--8e7211be/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-vancouver-bc/amplifon-clinic-vancouver-s90001A85",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-vancouver-bc_amplifon-clinic-vancouver-s90001A85--a4a0b528/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-vegreville-ab/amplifon-vegreville-50-avenue-s90001C30",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-vegreville-ab_amplifon-vegreville-50-avenue-s90001C30--1b09f122/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-victoria-bc/amplifon-victoria-tillicum-centre-s90001A92",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-victoria-bc_amplifon-victoria-tillicum-centre-s90001A92--2ec603c3/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-virgil-on/amplifon-virgil-line-2-road-s90001B31",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-virgil-on_amplifon-virgil-line-2-road-s90001B31--6371b845/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-wadena-sk/amplifon-clinic-at-wadena-senior-centre-p90001B75",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-wadena-sk_amplifon-clinic-at-wadena-senior-centre-p90001B75--3d45f17b/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-waterdown-on/amplifon-waterdown-255-dundas-st-e-s90001C58",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-waterdown-on_amplifon-waterdown-255-dundas-st-e-s90001C58--6655be88/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-waterloo-on/amplifon-clinic-waterloo-erb-st-s90001B76",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-waterloo-on_amplifon-clinic-waterloo-erb-st-s90001B76--9d2f33d4/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-waterloo-on/amplifon-clinic-waterloo-s90001B77",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-waterloo-on_amplifon-clinic-waterloo-s90001B77--6c6194e2/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-waterloo-on/waterloo-medical-centre-2-s90001B88",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-waterloo-on_waterloo-medical-centre-2-s90001B88--8cb709d5/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-westlock-ab/amplifon-westlock-106-street-westlock-s90001C31",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-westlock-ab_amplifon-westlock-106-street-westlock-s90001C31--c8601afe/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-wetaskiwin-ab/amplifon-wetaskiwin-56-street-s90001C32",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-wetaskiwin-ab_amplifon-wetaskiwin-56-street-s90001C32--cb24941e/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-weyburn-sk/amplifon-clinic-at-wheatland-senior-centre-p90001B69",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-weyburn-sk_amplifon-clinic-at-wheatland-senior-centre-p90001B69--0a825627/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-whitby-on/amplifon-whitby-brock-street-north-s90001B37",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-whitby-on_amplifon-whitby-brock-street-north-s90001B37--546f934d/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-winnipeg-mb/amplifon-winnipeg-crestview-s90001B39",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-winnipeg-mb_amplifon-winnipeg-crestview-s90001B39--25066650/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-winnipeg-mb/amplifon-winnipeg-linden-woods-s90001B40",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-winnipeg-mb_amplifon-winnipeg-linden-woods-s90001B40--5cc69341/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-winnipeg-mb/amplifon-winnipeg-st-boniface-s90001C01",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-winnipeg-mb_amplifon-winnipeg-st-boniface-s90001C01--bab441ae/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-woodbridge-on/8787-weston-rd-s90001C03",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-woodbridge-on_8787-weston-rd-s90001C03--bdc8300f/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-york-on/amplifon-toronto-forest-hill-s90001B28",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-york-on_amplifon-toronto-forest-hill-s90001B28--832d000c/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/branch-locator/hearing-clinics-yorkton-sk/18-first-ave-n-s90001C04",
+        "instanceId": "3aa8b38",
+        "screenshot": ".pages/www_amplifon_com_ca_branch-locator_hearing-clinics-yorkton-sk_18-first-ave-n-s90001C04--64922683/blocks/3aa8b38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/affordability/siya-2-bte",
+        "instanceId": "2d4ca38",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_affordability_siya-2-bte--a5d96ab1/blocks/2d4ca38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/connectivity/motion-13p-models",
+        "instanceId": "2d4ca38",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_connectivity_motion-13p-models--69921aa9/blocks/2d4ca38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/connectivity/motion-13p-models1",
+        "instanceId": "2d4ca38",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_connectivity_motion-13p-models1--4b648a18/blocks/2d4ca38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/invisibility/opn-1-custom-ite",
+        "instanceId": "2d4ca38",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_invisibility_opn-1-custom-ite--37583a17/blocks/2d4ca38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/invisibility/pure-2-nx-model",
+        "instanceId": "2d4ca38",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_invisibility_pure-2-nx-model--ee0753fa/blocks/2d4ca38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/rechargeability/motion-charge-and-go-models",
+        "instanceId": "2d4ca38",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_rechargeability_motion-charge-and-go-models--5c255a30/blocks/2d4ca38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/rechargeability/pure-charghe-and-go-models",
+        "instanceId": "2d4ca38",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_rechargeability_pure-charghe-and-go-models--3e256db0/blocks/2d4ca38.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/amplifon-way",
+        "instanceId": "7c40730",
+        "screenshot": ".pages/www_amplifon_com_ca_amplifon-way--3c283929/blocks/7c40730.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/assistive-listening-devices",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_assistive-listening-devices--1b9fe59a/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/assistive-listening-devices/headphones/noise-cancelling-headphones",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_assistive-listening-devices_headphones_noise-cancelling-headphones--ee18e68d/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/audiology-news/best-hearing-aids",
+        "instanceId": "5eed78f4",
+        "screenshot": ".pages/www_amplifon_com_ca_audiology-news_best-hearing-aids--c9b43590/blocks/5eed78f4.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/audiology-news/can-hearing-aids-cause-vertigo-",
+        "instanceId": "52548316",
+        "screenshot": ".pages/www_amplifon_com_ca_audiology-news_can-hearing-aids-cause-vertigo---ecc295aa/blocks/52548316.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/covid-19/safe-clinic-protocols",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_covid-19_safe-clinic-protocols--4ead8868/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/autophony",
+        "instanceId": "52548373",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_autophony--56030987/blocks/52548373.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/dementia-and-hearing-loss",
+        "instanceId": "52548392",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_dementia-and-hearing-loss--ae8302d6/blocks/52548392.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/bppv-vertigo/ear-crystals",
+        "instanceId": "7c40711",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_bppv-vertigo_ear-crystals--4c5887e9/blocks/7c40711.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/ear-barotrauma",
+        "instanceId": "525483d0",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_ear-barotrauma--9e718114/blocks/525483d0.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/ear-cancer",
+        "instanceId": "52548392",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_ear-cancer--627b7e62/blocks/52548392.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/ear-eczema",
+        "instanceId": "7c40809",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_ear-eczema--880f7421/blocks/7c40809.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/earache-and-headache",
+        "instanceId": "52548392",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_earache-and-headache--d1ed8ff4/blocks/52548392.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/earwax-buildup",
+        "instanceId": "525483ef",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_earwax-buildup--d5be46e0/blocks/525483ef.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/fluid-in-ear",
+        "instanceId": "7c4076e",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_fluid-in-ear--29b8c1b4/blocks/7c4076e.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/frostbite-on-ear",
+        "instanceId": "52548335",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_frostbite-on-ear--e34918c6/blocks/52548335.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/how-to-unclog-ears/valsalva-maneuver",
+        "instanceId": "52548392",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_how-to-unclog-ears_valsalva-maneuver--5ed46694/blocks/52548392.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/lump-behind-ear",
+        "instanceId": "7c4078d",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_lump-behind-ear--cfa6b677/blocks/7c4078d.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/otitis/swimmers-ear",
+        "instanceId": "525483ef",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_otitis_swimmers-ear--bc7ba078/blocks/525483ef.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/otosclerosis",
+        "instanceId": "7c4074f",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_otosclerosis--f1517d00/blocks/7c4074f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/pimple-in-ear",
+        "instanceId": "525483ef",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_pimple-in-ear--ec8aec31/blocks/525483ef.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/ruptured-eardrum",
+        "instanceId": "52548392",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_ruptured-eardrum--43baf0de/blocks/52548392.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/tmj-and-ear-pain",
+        "instanceId": "52548354",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_tmj-and-ear-pain--6ee19f8e/blocks/52548354.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/water-in-ear",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_water-in-ear--9d2b1647/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/eustachian-tube-dysfunction",
+        "instanceId": "525482f7",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_eustachian-tube-dysfunction--7346f12d/blocks/525482f7.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/infections-and-other-conditions/ear-infections-and-swimming",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_infections-and-other-conditions_ear-infections-and-swimming--4bba60f2/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/infections-and-other-conditions/food-to-cure-dizziness",
+        "instanceId": "52548316",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_infections-and-other-conditions_food-to-cure-dizziness--6898febf/blocks/52548316.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/infections-and-other-conditions/sinus-infection-and-ear-pain",
+        "instanceId": "525483ef",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_infections-and-other-conditions_sinus-infection-and-ear-pain--844e937a/blocks/525483ef.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/tinnitus/exercises-for-tinnitus",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_tinnitus_exercises-for-tinnitus--cb5b2205/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/tinnitus/ringing-in-ear-causes",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_tinnitus_ringing-in-ear-causes--5be1760f/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/tinnitus/ringing-in-ear-symptoms",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_tinnitus_ringing-in-ear-symptoms--828d970a/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/tinnitus/ringing-in-ear-treatments",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_tinnitus_ringing-in-ear-treatments--00a21efe/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/general-privacy-policy-page",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_general-privacy-policy-page--a74f207e/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids",
+        "instanceId": "1b240120",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids--10a1a261/blocks/1b240120.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/costs-and-prices",
+        "instanceId": "525482f7",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_costs-and-prices--ba535759/blocks/525482f7.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/costs-and-prices/payment-options",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_costs-and-prices_payment-options--440f5ee8/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology--22c8d9a9/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/artificial-intelligence-hearing-aids",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_artificial-intelligence-hearing-aids--cf242ff3/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/best-hearing-aid-technology-for-specific-needs-or-lifestyle",
+        "instanceId": "52548392",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_best-hearing-aid-technology-for-specific-needs-or-lifestyle--7a7108ca/blocks/52548392.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/connectivity/tv-hearing-aids",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_connectivity_tv-hearing-aids--32cfb35b/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/how-do-hearing-aids-work/hearing-aid-parts",
+        "instanceId": "1b2400a4",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_how-do-hearing-aids-work_hearing-aid-parts--3d6caac7/blocks/1b2400a4.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/how-do-hearing-aids-work/hearing-aid-parts/wax-guard",
+        "instanceId": "52548316",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_how-do-hearing-aids-work_hearing-aid-parts_wax-guard--18621ce1/blocks/52548316.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/care-wherever-you-are",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_care-wherever-you-are--6457277c/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/care-wherever-you-are/cleaning-hearing-aids",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_care-wherever-you-are_cleaning-hearing-aids--f513ef24/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/care-wherever-you-are/faqs-and-tutorials",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_care-wherever-you-are_faqs-and-tutorials--ed605477/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/care-wherever-you-are/how-to-insert-hearing-aids",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_care-wherever-you-are_how-to-insert-hearing-aids--d5268ad2/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/care-wherever-you-are/how-to-turn-hearing-aids-on-off",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_care-wherever-you-are_how-to-turn-hearing-aids-on-off--f02ea864/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/when-to-replace-your-hearing-aids",
+        "instanceId": "7c40711",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_when-to-replace-your-hearing-aids--3a5be70a/blocks/7c40711.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/small-hearing-aids",
+        "instanceId": "52548392",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_small-hearing-aids--f8a877f4/blocks/52548392.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/types-and-styles",
+        "instanceId": "6b866e75",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_types-and-styles--77597544/blocks/6b866e75.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq",
+        "instanceId": "7c40730",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq--732cc0da/blocks/7c40730.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/best-hearing-aid-for-seniors",
+        "instanceId": "525482f7",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_best-hearing-aid-for-seniors--a8a6b200/blocks/525482f7.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/can-hearing-aids-cause-vertigo",
+        "instanceId": "52548316",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_can-hearing-aids-cause-vertigo--196d4fc8/blocks/52548316.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/how-long-do-hearing-aids-last",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_how-long-do-hearing-aids-last--660c78d1/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/pros-cons-invisible-hearing-aids",
+        "instanceId": "7c4078d",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_pros-cons-invisible-hearing-aids--285097af/blocks/7c4078d.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/tips-for-travelling",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_tips-for-travelling--04bd8ba2/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/glasses-with-hearing-aids",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_glasses-with-hearing-aids--84801591/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services",
+        "instanceId": "1b2400c3",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services--307ff406/blocks/1b2400c3.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-protection/our-hearing-protection-solutions",
+        "instanceId": "7c40711",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-protection_our-hearing-protection-solutions--b10be11d/blocks/7c40711.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-protection/our-hearing-protection-solutions/earplugs-for-sleeping",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-protection_our-hearing-protection-solutions_earplugs-for-sleeping--774515f2/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-protection/our-hearing-protection-solutions/musician-ear-plugs",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-protection_our-hearing-protection-solutions_musician-ear-plugs--5f9fdcac/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-loss-causes",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-loss-causes--e3d1a999/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-loss-prevention",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-loss-prevention--47ef7207/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-loss-prevention/ears-cleaning/hydrogen-peroxide-in-ear",
+        "instanceId": "7c4076e",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-loss-prevention_ears-cleaning_hydrogen-peroxide-in-ear--7413653c/blocks/7c4076e.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-loss-prevention/improve-hearing",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-loss-prevention_improve-hearing--237f4ced/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-loss-prevention/lifesytle-tips-to-prevent-deafness",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-loss-prevention_lifesytle-tips-to-prevent-deafness--d9db127f/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-loss-prevention/risking-hear-loss-at-the-work-place",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-loss-prevention_risking-hear-loss-at-the-work-place--8e83d9a7/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-loss-symptoms",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-loss-symptoms--614c4238/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/how-hearing-works",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_how-hearing-works--24321961/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/how-hearing-works/ear-parts/temporal-bone",
+        "instanceId": "525483d0",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_how-hearing-works_ear-parts_temporal-bone--da2db06e/blocks/525483d0.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/how-hearing-works/stapedial-reflex",
+        "instanceId": "52548316",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_how-hearing-works_stapedial-reflex--d54fbd15/blocks/52548316.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/types-of-hearing-loss/muffled-hearing-loss-in-one-ear",
+        "instanceId": "52548354",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_types-of-hearing-loss_muffled-hearing-loss-in-one-ear--a6b9f48e/blocks/52548354.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/types-of-hearing-loss/understanding-sensorineural-hearing-loss",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_types-of-hearing-loss_understanding-sensorineural-hearing-loss--d4750921/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/amplifon-way",
+        "instanceId": "52548392",
+        "screenshot": ".pages/www_amplifon_com_ca_amplifon-way--3c283929/blocks/52548392.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/assistive-listening-devices/can-earbuds-be-used-as-hearing-aids",
+        "instanceId": "7c40730",
+        "screenshot": ".pages/www_amplifon_com_ca_assistive-listening-devices_can-earbuds-be-used-as-hearing-aids--0e5e83c3/blocks/7c40730.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/assistive-listening-devices/headphones/noise-cancelling-headphones",
+        "instanceId": "7c4074f",
+        "screenshot": ".pages/www_amplifon_com_ca_assistive-listening-devices_headphones_noise-cancelling-headphones--ee18e68d/blocks/7c4074f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/audiology-news/best-hearing-aids",
+        "instanceId": "7ec1b38e",
+        "screenshot": ".pages/www_amplifon_com_ca_audiology-news_best-hearing-aids--c9b43590/blocks/7ec1b38e.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/audiology-news/can-hearing-aids-cause-vertigo-",
+        "instanceId": "52548373",
+        "screenshot": ".pages/www_amplifon_com_ca_audiology-news_can-hearing-aids-cause-vertigo---ecc295aa/blocks/52548373.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/audiology-news/first-days-with-hearing-aids",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_audiology-news_first-days-with-hearing-aids--1dd432c3/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/audiology-news/how-to-relieve-ear-pressure",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_audiology-news_how-to-relieve-ear-pressure--5cf3c285/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss--e4cfd03d/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/bppv-vertigo",
+        "instanceId": "7c40828",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_bppv-vertigo--4b5b8e62/blocks/7c40828.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/dry-skin-in-ears",
+        "instanceId": "7c407ac",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_dry-skin-in-ears--5484b0c8/blocks/7c407ac.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/ear-barotrauma",
+        "instanceId": "7c407ac",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_ear-barotrauma--9e718114/blocks/7c407ac.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/earache-and-headache",
+        "instanceId": "525483d0",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_earache-and-headache--d1ed8ff4/blocks/525483d0.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/frostbite-on-ear",
+        "instanceId": "52548392",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_frostbite-on-ear--e34918c6/blocks/52548392.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/how-cold-and-flu-affect-ears",
+        "instanceId": "52548373",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_how-cold-and-flu-affect-ears--c1de5abe/blocks/52548373.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/how-to-unclog-ears",
+        "instanceId": "52548373",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_how-to-unclog-ears--3e1d3a97/blocks/52548373.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/how-to-unclog-ears/valsalva-maneuver",
+        "instanceId": "7c40ad2",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_how-to-unclog-ears_valsalva-maneuver--5ed46694/blocks/7c40ad2.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/otitis",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_otitis--4d7f2f6e/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/otitis/swimmers-ear",
+        "instanceId": "7c407cb",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_otitis_swimmers-ear--bc7ba078/blocks/7c407cb.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/ruptured-eardrum",
+        "instanceId": "7c4074f",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_ruptured-eardrum--43baf0de/blocks/7c4074f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/vibration-in-ear",
+        "instanceId": "525483d0",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_vibration-in-ear--45976929/blocks/525483d0.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/eustachian-tube-dysfunction",
+        "instanceId": "52548392",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_eustachian-tube-dysfunction--7346f12d/blocks/52548392.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/infections-and-other-conditions/can-stress-and-anxiety-cause-vertigo-and-dizziness",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_infections-and-other-conditions_can-stress-and-anxiety-cause-vertigo-and-dizziness--f131a8f5/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/seasonal-issues",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_seasonal-issues--95d6962a/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/tinnitus/cervical-tinnitus",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_tinnitus_cervical-tinnitus--1686283d/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/tinnitus/exercises-for-tinnitus",
+        "instanceId": "7c40828",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_tinnitus_exercises-for-tinnitus--cb5b2205/blocks/7c40828.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/tinnitus/pulsatile-tinnitus",
+        "instanceId": "7c40730",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_tinnitus_pulsatile-tinnitus--9f162127/blocks/7c40730.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/bone-anchored-hearing-devices",
+        "instanceId": "7c4076e",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_bone-anchored-hearing-devices--8f91b2d6/blocks/7c4076e.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/costs-and-prices",
+        "instanceId": "7c4076e",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_costs-and-prices--ba535759/blocks/7c4076e.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/costs-and-prices/affordable-hearing-aids",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_costs-and-prices_affordable-hearing-aids--80f9c70c/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/best-hearing-aid-technology-for-specific-needs-or-lifestyle",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_best-hearing-aid-technology-for-specific-needs-or-lifestyle--7a7108ca/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/connectivity/how-to-pair-hearing-aids-with-phone",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_connectivity_how-to-pair-hearing-aids-with-phone--d826432e/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/how-do-hearing-aids-work",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_how-do-hearing-aids-work--7c7d5cd5/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/how-do-hearing-aids-work/hearing-aid-parts",
+        "instanceId": "495c0e16",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_how-do-hearing-aids-work_hearing-aid-parts--3d6caac7/blocks/495c0e16.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/how-do-hearing-aids-work/hearing-aid-parts/wax-guard",
+        "instanceId": "52548373",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_how-do-hearing-aids-work_hearing-aid-parts_wax-guard--18621ce1/blocks/52548373.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/hearing-aid-batteries/battery-vs-rechargeable-hearing-aids",
+        "instanceId": "52548354",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_hearing-aid-batteries_battery-vs-rechargeable-hearing-aids--1fa5f201/blocks/52548354.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/hearing-aid-repair",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_hearing-aid-repair--7b4af415/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/when-to-replace-your-hearing-aids",
+        "instanceId": "7c40730",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_when-to-replace-your-hearing-aids--3a5be70a/blocks/7c40730.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/types-and-styles",
+        "instanceId": "5476e0e",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_types-and-styles--77597544/blocks/5476e0e.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq",
+        "instanceId": "52548373",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq--732cc0da/blocks/52548373.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/can-hearing-aids-cause-vertigo",
+        "instanceId": "52548373",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_can-hearing-aids-cause-vertigo--196d4fc8/blocks/52548373.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/how-long-do-hearing-aids-last",
+        "instanceId": "52548373",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_how-long-do-hearing-aids-last--660c78d1/blocks/52548373.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/how-to-extend-hearing-aids-battery-life",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_how-to-extend-hearing-aids-battery-life--4ac9f9ca/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/pros-cons-invisible-hearing-aids",
+        "instanceId": "525482f7",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_pros-cons-invisible-hearing-aids--285097af/blocks/525482f7.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/pros-cons-itc-hearing-aids",
+        "instanceId": "52548392",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_pros-cons-itc-hearing-aids--b592671e/blocks/52548392.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/tips-for-travelling",
+        "instanceId": "52548373",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_tips-for-travelling--04bd8ba2/blocks/52548373.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/glasses-with-hearing-aids",
+        "instanceId": "52548373",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_glasses-with-hearing-aids--84801591/blocks/52548373.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/choosing-amplifon-expertise-and-services/our-history-and-experience",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_choosing-amplifon-expertise-and-services_our-history-and-experience--6284ce4c/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/choosing-amplifon-expertise-and-services/our-history-and-experience/miracle-ear-becomes-amplifon",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_choosing-amplifon-expertise-and-services_our-history-and-experience_miracle-ear-becomes-amplifon--84cbb8f8/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-protection/our-hearing-protection-solutions",
+        "instanceId": "52548373",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-protection_our-hearing-protection-solutions--b10be11d/blocks/52548373.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-protection/our-hearing-protection-solutions/earplugs-for-concerts",
+        "instanceId": "52548316",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-protection_our-hearing-protection-solutions_earplugs-for-concerts--9ed8a95f/blocks/52548316.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/online-hearing-test",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_online-hearing-test--622646d6/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-loss-prevention/improve-hearing",
+        "instanceId": "525483ef",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-loss-prevention_improve-hearing--237f4ced/blocks/525483ef.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-loss-symptoms",
+        "instanceId": "52548373",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-loss-symptoms--614c4238/blocks/52548373.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/types-of-hearing-loss",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_types-of-hearing-loss--0f7f16b4/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/types-of-hearing-loss/sudden-hearing-loss/sudden-temporary-hearing-loss",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_types-of-hearing-loss_sudden-hearing-loss_sudden-temporary-hearing-loss--8942866d/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/amplifon-way",
+        "instanceId": "52548354",
+        "screenshot": ".pages/www_amplifon_com_ca_amplifon-way--3c283929/blocks/52548354.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/assistive-listening-devices/amplified-phones/clarity-bt914",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_assistive-listening-devices_amplified-phones_clarity-bt914--6bf2aaaa/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/assistive-listening-devices/amplified-phones/clarity-d704",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_assistive-listening-devices_amplified-phones_clarity-d704--aeedf9df/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/assistive-listening-devices/amplified-phones/clarity-e814cc",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_assistive-listening-devices_amplified-phones_clarity-e814cc--c2ce6718/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/assistive-listening-devices/amplified-phones/clarity-xlc3-4",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_assistive-listening-devices_amplified-phones_clarity-xlc3-4--5298178f/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/assistive-listening-devices/amplified-phones/switel-dct-50071-vita",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_assistive-listening-devices_amplified-phones_switel-dct-50071-vita--992b5c72/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/assistive-listening-devices/amplified-phones/switel-vita-dc5001",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_assistive-listening-devices_amplified-phones_switel-vita-dc5001--6c555e90/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/assistive-listening-devices/can-earbuds-be-used-as-hearing-aids",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_assistive-listening-devices_can-earbuds-be-used-as-hearing-aids--0e5e83c3/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/autophony",
+        "instanceId": "52548335",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_autophony--56030987/blocks/52548335.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/dementia-and-hearing-loss",
+        "instanceId": "525482f7",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_dementia-and-hearing-loss--ae8302d6/blocks/525482f7.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/acoustic-neuroma",
+        "instanceId": "52548373",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_acoustic-neuroma--e8ba6aab/blocks/52548373.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/bppv-vertigo",
+        "instanceId": "7c40730",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_bppv-vertigo--4b5b8e62/blocks/7c40730.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/bppv-vertigo/ear-crystals",
+        "instanceId": "52548373",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_bppv-vertigo_ear-crystals--4c5887e9/blocks/52548373.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/crackling-in-ear",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_crackling-in-ear--baa9bafc/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/dry-skin-in-ears",
+        "instanceId": "52548373",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_dry-skin-in-ears--5484b0c8/blocks/52548373.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/ear-barotrauma",
+        "instanceId": "52548354",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_ear-barotrauma--9e718114/blocks/52548354.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/ear-eczema",
+        "instanceId": "52548373",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_ear-eczema--880f7421/blocks/52548373.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/fluid-in-ear",
+        "instanceId": "7c4078d",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_fluid-in-ear--29b8c1b4/blocks/7c4078d.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/insects-and-bugs-in-ear",
+        "instanceId": "7c40730",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_insects-and-bugs-in-ear--83e5a835/blocks/7c40730.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/lump-behind-ear",
+        "instanceId": "52548392",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_lump-behind-ear--cfa6b677/blocks/52548392.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/otosclerosis",
+        "instanceId": "7c407ac",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_otosclerosis--f1517d00/blocks/7c407ac.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/pimple-in-ear",
+        "instanceId": "52548316",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_pimple-in-ear--ec8aec31/blocks/52548316.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/red-and-hot-ears",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_red-and-hot-ears--4e2a6ad5/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/tmj-and-ear-pain",
+        "instanceId": "525482f7",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_tmj-and-ear-pain--6ee19f8e/blocks/525482f7.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/vibration-in-ear",
+        "instanceId": "52548373",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_vibration-in-ear--45976929/blocks/52548373.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/water-in-ear",
+        "instanceId": "7c40730",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_water-in-ear--9d2b1647/blocks/7c40730.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/infections-and-other-conditions/food-to-cure-dizziness",
+        "instanceId": "52548354",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_infections-and-other-conditions_food-to-cure-dizziness--6898febf/blocks/52548354.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/infections-and-other-conditions/sinus-infection-and-ear-pain",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_infections-and-other-conditions_sinus-infection-and-ear-pain--844e937a/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/sore-throat-and-ear-pain",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_sore-throat-and-ear-pain--5360219d/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/tinnitus/pulsatile-tinnitus",
+        "instanceId": "52548354",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_tinnitus_pulsatile-tinnitus--9f162127/blocks/52548354.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aid-guide",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aid-guide--4e471842/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids",
+        "instanceId": "495c0dd8",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids--10a1a261/blocks/495c0dd8.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/bone-anchored-hearing-devices",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_bone-anchored-hearing-devices--8f91b2d6/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/costs-and-prices",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_costs-and-prices--ba535759/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/costs-and-prices/affordable-hearing-aids",
+        "instanceId": "52548354",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_costs-and-prices_affordable-hearing-aids--80f9c70c/blocks/52548354.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/care-wherever-you-are/cleaning-hearing-aids/step-by-step-guide",
+        "instanceId": "525483b1",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_care-wherever-you-are_cleaning-hearing-aids_step-by-step-guide--a440690c/blocks/525483b1.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/care-wherever-you-are/how-to-connect-hearing-aids-to-bluetooth",
+        "instanceId": "52548316",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_care-wherever-you-are_how-to-connect-hearing-aids-to-bluetooth--2a7c0e4e/blocks/52548316.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/hearing-aid-chargers",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_hearing-aid-chargers--1af754c6/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/remotes-and-wireless-accessories/resound-unite-phone-clip",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_remotes-and-wireless-accessories_resound-unite-phone-clip--6b537d20/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/personalised-hearing-tests/complimentary-hearing-test",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_personalised-hearing-tests_complimentary-hearing-test--c34f8b38/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-protection",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-protection--28630875/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-protection/our-hearing-protection-solutions/earplugs-for-concerts",
+        "instanceId": "7c40711",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-protection_our-hearing-protection-solutions_earplugs-for-concerts--9ed8a95f/blocks/7c40711.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-protection/our-hearing-protection-solutions/shooting-and-hunting-ear-protection",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-protection_our-hearing-protection-solutions_shooting-and-hunting-ear-protection--6a6a2a2a/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-impairment-with-age",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-impairment-with-age--68aa9999/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/how-hearing-works/ear-parts/temporal-bone",
+        "instanceId": "52548335",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_how-hearing-works_ear-parts_temporal-bone--da2db06e/blocks/52548335.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/types-of-hearing-loss/muffled-hearing-loss-in-one-ear",
+        "instanceId": "7c407ac",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_types-of-hearing-loss_muffled-hearing-loss-in-one-ear--a6b9f48e/blocks/7c407ac.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/types-of-hearing-loss/sudden-hearing-loss",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_types-of-hearing-loss_sudden-hearing-loss--d0b17d30/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/assistive-listening-devices/amplified-phones/clarity-altoplus",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_assistive-listening-devices_amplified-phones_clarity-altoplus--d75896ca/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/ear-conditions/lump-behind-ear",
+        "instanceId": "525483d0",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_ear-conditions_lump-behind-ear--cfa6b677/blocks/525483d0.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/connectivity/how-to-connect-laptop-and-smartwatches",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_connectivity_how-to-connect-laptop-and-smartwatches--7603bc08/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/hearing-aid-batteries/battery-vs-rechargeable-hearing-aids",
+        "instanceId": "525482f7",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_hearing-aid-batteries_battery-vs-rechargeable-hearing-aids--1fa5f201/blocks/525482f7.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids/faq/best-hearing-aid-for-seniors",
+        "instanceId": "52548354",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids_faq_best-hearing-aid-for-seniors--a8a6b200/blocks/52548354.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/types-of-hearing-loss/anacusis",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_types-of-hearing-loss_anacusis--cd5c1e66/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/types-of-hearing-loss/conductive-hearing-loss",
+        "instanceId": "310d49c5",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_types-of-hearing-loss_conductive-hearing-loss--e91d2a83/blocks/310d49c5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/connectivity/motion-13p-models",
+        "instanceId": "4adeb772",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_connectivity_motion-13p-models--69921aa9/blocks/4adeb772.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/connectivity/motion-13p-models1",
+        "instanceId": "4adeb772",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_connectivity_motion-13p-models1--4b648a18/blocks/4adeb772.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/invisibility/opn-1-custom-ite",
+        "instanceId": "4adeb772",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_invisibility_opn-1-custom-ite--37583a17/blocks/4adeb772.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/rechargeability/motion-charge-and-go-models",
+        "instanceId": "4adeb772",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_rechargeability_motion-charge-and-go-models--5c255a30/blocks/4adeb772.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/affordability",
+        "instanceId": "704f1a35",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_affordability--714f3a12/blocks/704f1a35.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/connectivity",
+        "instanceId": "704f1a35",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_connectivity--2c807b4b/blocks/704f1a35.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/invisibility",
+        "instanceId": "704f1a35",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_invisibility--c0315b13/blocks/704f1a35.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/rechargeability",
+        "instanceId": "704f1a35",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_rechargeability--f381f90f/blocks/704f1a35.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/types-and-styles/in-the-ear",
+        "instanceId": "3471d48f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_types-and-styles_in-the-ear--110eabcc/blocks/3471d48f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/types-and-styles/receiver-in-canal",
+        "instanceId": "3471d48f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_types-and-styles_receiver-in-canal--fea39ae8/blocks/3471d48f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/rechargeability/pure-charghe-and-go-models",
+        "instanceId": "4adeb772",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_rechargeability_pure-charghe-and-go-models--3e256db0/blocks/4adeb772.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/types-and-styles/behind-the-ear",
+        "instanceId": "3471d48f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_types-and-styles_behind-the-ear--f29bd9e3/blocks/3471d48f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/online-hearing-test",
+        "instanceId": "15c96a16",
+        "screenshot": ".pages/www_amplifon_com_ca_online-hearing-test--622646d6/blocks/15c96a16.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/benefits/affordability/siya-2-bte",
+        "instanceId": "4adeb772",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_benefits_affordability_siya-2-bte--a5d96ab1/blocks/4adeb772.jpg"
+      }
+    ],
+    "reuseCount": 336,
+    "lastUsed": "2026-10-01T13:39:18.729Z"
+  }
+}

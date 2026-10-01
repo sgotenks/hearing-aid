@@ -1,0 +1,175 @@
+{
+  "variantName": "form",
+  "baseBlock": "form",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "moderate",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "noimg",
+    "structure": "heading + text + 1 CTAs"
+  },
+  "contentPattern": {
+    "structure": "form definition reference with heading, intro text and submit CTA",
+    "buttonCount": 1
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_add7cb7d53c3",
+    "v_41d7b41c3696",
+    "v_24079918e6be",
+    "v_35ca9f4721b4"
+  ],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.amplifon.com/ca/assistive-listening-devices/personal-amplifiers",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_assistive-listening-devices_personal-amplifiers--3fcac830/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss--e4cfd03d/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/tinnitus",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_tinnitus--afeb63be/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/diseases-and-hearing-loss/tinnitus/ringing-in-ear-treatments",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_diseases-and-hearing-loss_tinnitus_ringing-in-ear-treatments--00a21efe/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids--10a1a261/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology--22c8d9a9/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/innovative-technology/how-do-hearing-aids-work/hearing-aid-parts",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_innovative-technology_how-do-hearing-aids-work_hearing-aid-parts--3d6caac7/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance--12e74e0e/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/care-wherever-you-are/faqs-and-tutorials",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_care-wherever-you-are_faqs-and-tutorials--ed605477/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/wearing-hearing-aids",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_wearing-hearing-aids--050ddaaf/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services--307ff406/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/aftersales-care/hearing-aid-adjustment",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_aftersales-care_hearing-aid-adjustment--a71d4fad/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/aftersales-care/hearing-aid-adjustment/hearing-aid-upgrade",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_aftersales-care_hearing-aid-adjustment_hearing-aid-upgrade--41f58684/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/aftersales-care/hearing-aid-insurance",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_aftersales-care_hearing-aid-insurance--26802b3e/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/aftersales-care/service-plan",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_aftersales-care_service-plan--f6ea6b2b/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/choosing-amplifon-expertise-and-services",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_choosing-amplifon-expertise-and-services--a22ec29e/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/choosing-amplifon-expertise-and-services/learn-more-about-audiologists",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_choosing-amplifon-expertise-and-services_learn-more-about-audiologists--665e03db/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/choosing-amplifon-expertise-and-services/our-history-and-experience/miracle-ear-becomes-amplifon",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_choosing-amplifon-expertise-and-services_our-history-and-experience_miracle-ear-becomes-amplifon--84cbb8f8/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/personalised-hearing-solutions",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_personalised-hearing-solutions--e55bfe7c/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/personalised-hearing-solutions/money-back-guarantee",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_personalised-hearing-solutions_money-back-guarantee--7df6cbe0/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/personalised-hearing-tests",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_personalised-hearing-tests--893499f2/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/personalised-hearing-tests/complimentary-hearing-test",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_personalised-hearing-tests_complimentary-hearing-test--c34f8b38/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-health-services/personalised-hearing-tests/free-hearing-aid-trial",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-health-services_personalised-hearing-tests_free-hearing-aid-trial--29511704/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-protection",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-protection--28630875/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/recognising-hearing-loss/hearing-loss-prevention/ears-cleaning",
+        "instanceId": "770fb11f",
+        "screenshot": ".pages/www_amplifon_com_ca_recognising-hearing-loss_hearing-loss-prevention_ears-cleaning--5135e518/blocks/770fb11f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/book-an-appointment",
+        "instanceId": "ef95702",
+        "screenshot": ".pages/www_amplifon_com_ca_book-an-appointment--06257422/blocks/ef95702.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/book-an-appointment-test",
+        "instanceId": "ef95702",
+        "screenshot": ".pages/www_amplifon_com_ca_book-an-appointment-test--dc9b0816/blocks/ef95702.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/our-contacts",
+        "instanceId": "59deda2f",
+        "screenshot": ".pages/www_amplifon_com_ca_our-contacts--c47aa3d9/blocks/59deda2f.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/cmp/landing-olb-template/olb-steps",
+        "instanceId": "e00db8a",
+        "screenshot": ".pages/www_amplifon_com_ca_cmp_landing-olb-template_olb-steps--a71d1a86/blocks/e00db8a.jpg"
+      }
+    ],
+    "reuseCount": 29,
+    "lastUsed": "2026-10-01T13:39:19.386Z"
+  }
+}

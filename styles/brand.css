@@ -1,0 +1,60 @@
+/*
+ * Amplifon Canada brand tokens, extracted from https://www.amplifon.com/ca/
+ * (see migration-work/brand.json).
+ *
+ * Body text uses Noto Sans, self-hosted and registered in fonts.css.
+ * Headings on the source use the licensed "Value" typeface, which is self-hosted
+ * by Amplifon and not available from a public font service. Until a web license
+ * and font files are provided, headings fall back to Noto Sans Bold. When Value
+ * is added, register it as "Value-Bold" in fonts.css and set
+ * --heading-font-weight to 400 (Value-Bold is a single bold face).
+ *
+ * --muted-color is darkened from the source's #888 to #707070 to meet the
+ * 4.5:1 contrast minimum for text on white.
+ */
+:root {
+  /* colors */
+  --background-color: #fff;
+  --text-color: #222;
+  --link-color: #c5003e;
+  --link-hover-color: #444;
+  --light-color: #f7f8f8;
+  --grey-color: #f7f8f8;
+  --muted-color: #707070;
+  --border-color: #e2e4e4;
+
+  /* fonts */
+  --body-font-family: "Noto Sans", noto-sans-fallback, sans-serif;
+  --heading-font-family: "Value-Bold", "Noto Sans", noto-sans-fallback, sans-serif;
+  --heading-font-weight: 700;
+
+  /* body sizes */
+  --body-font-size-m: 16px;
+  --body-font-size-s: 14px;
+  --body-font-size-xs: 12px;
+  --body-line-height: 26px;
+
+  /* heading sizes */
+  --heading-font-size-xxl: 36px;
+  --heading-font-size-xl: 28px;
+  --heading-font-size-l: 22px;
+  --heading-font-size-m: 20px;
+  --heading-font-size-s: 18px;
+  --heading-font-size-xs: 16px;
+
+  /* spacing */
+  --section-padding: 40px;
+  --content-max-width: 1440px;
+  --content-gutter: 20px;
+
+  /* buttons */
+  --button-radius: 50px;
+  --button-padding: 12px 20px;
+}
+
+@media (width >= 900px) {
+  :root {
+    --section-padding: 60px;
+    --content-gutter: 40px;
+  }
+}

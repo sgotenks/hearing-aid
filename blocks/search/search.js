@@ -239,13 +239,30 @@ function searchIcon() {
   return icon;
 }
 
+function searchButton(config) {
+  const button = document.createElement('button');
+  button.type = 'submit';
+  button.className = 'search-button';
+  button.setAttribute('aria-label', config.placeholders.search || 'Search');
+  button.append(searchIcon());
+  return button;
+}
+
 function searchBox(block, config) {
-  const box = document.createElement('div');
+  const box = document.createElement('form');
   box.classList.add('search-box');
+  box.setAttribute('role', 'search');
+  const input = searchInput(block, config);
   box.append(
-    searchIcon(),
-    searchInput(block, config),
+    input,
+    searchButton(config),
   );
+
+  // submit (button click / Enter) runs the same search with the input's current value
+  box.addEventListener('submit', (e) => {
+    e.preventDefault();
+    handleSearch({ target: input }, block, config);
+  });
 
   return box;
 }

@@ -1,0 +1,21 @@
+{
+  "status": "success",
+  "url": "https://www.amplifon.com/ca/",
+  "path": "index",
+  "timestamp": "2026-10-01T14:20:19.954Z",
+  "title": "Hearing Aids and Hearing Test Centres | Amplifon CA ",
+  "template": "homepage",
+  "blocks": [
+    "hero",
+    "cards-image-overlay",
+    "cards-image-overlay",
+    "search",
+    "columns-media-text",
+    "columns-media-text",
+    "columns-media-text",
+    "columns-cta-strip",
+    "columns-cta-strip",
+    "hero-promo-panel",
+    "cards-icon"
+  ]
+}

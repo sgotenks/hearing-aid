@@ -1,3 +1,4 @@
+/* hero: full-bleed, ignores the section content width */
 .hero-container .hero-wrapper {
   max-width: unset;
   padding: 0;
@@ -5,33 +6,287 @@
 
 .hero {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
 }
 
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
-}
-
-.hero picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
+/* authored/imported image cells wrap the picture in a <p> */
+.hero picture,
+.hero > div > div > p:has(> picture) {
+  display: block;
+  margin: 0;
 }
 
 .hero img {
-  object-fit: cover;
+  display: block;
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+/* ---------- default: photo with a white rounded text panel ---------- */
+
+/* image row: fixed-height photo on mobile, the panel overlaps its lower part */
+.hero:not(.promo-panel) > div:first-child {
+  position: relative;
+  height: 397px;
+}
+
+.hero:not(.promo-panel) > div:last-child {
+  position: relative;
+  margin-top: -200px;
+  padding: 0 20px;
+}
+
+.hero:not(.promo-panel) > div:last-child > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: var(--background-color);
+  text-align: center;
+}
+
+.hero:not(.promo-panel) h1 {
+  margin: 0;
+  color: var(--text-color);
+  font-size: var(--heading-font-size-xl);
+  line-height: 36px;
+}
+
+/* the intro copy is hidden on mobile, as on the source */
+.hero:not(.promo-panel) > div:last-child p:not(.button-container) {
+  display: none;
+  margin: 20px 0 0;
+  color: var(--dark-color);
+}
+
+.hero:not(.promo-panel) .button-container {
+  width: 100%;
+  margin: 30px 0 0;
+}
+
+main .hero:not(.promo-panel) a.button:any-link {
+  position: relative;
+  isolation: isolate;
+  display: block;
+  width: 100%;
+  height: 54px;
+  border: 0;
+  border-radius: 54px;
+  padding: 15px 25px;
+  line-height: 26px;
+}
+
+/* source hover: the pill keeps its red, a darker pill grows from the centre behind the label */
+main .hero:not(.promo-panel) a.button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  border-radius: 54px;
+  background-color: #a20033;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: width 0.31s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.31s cubic-bezier(0.25, 0.1, 0.25, 1);
+  pointer-events: none;
+}
+
+/* focus-visible mirrors hover (the source shows no focus state at all) and keeps the global outline */
+main .hero:not(.promo-panel) a.button:hover,
+main .hero:not(.promo-panel) a.button:focus-visible {
+  background-color: var(--link-color);
+  color: #fff;
+  text-decoration: underline;
+}
+
+main .hero:not(.promo-panel) a.button:hover::before,
+main .hero:not(.promo-panel) a.button:focus-visible::before {
+  width: 100%;
+  opacity: 1;
 }
 
 @media (width >= 900px) {
-  .hero {
-    padding: 40px 32px;
+  .hero:not(.promo-panel) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 678px;
+    padding: 40px;
+  }
+
+  .hero:not(.promo-panel) > div:first-child {
+    position: absolute;
+    inset: 0;
+    height: auto;
+  }
+
+  .hero:not(.promo-panel) > div:last-child {
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero:not(.promo-panel) > div:last-child > div {
+    width: 524px;
+    max-width: 100%;
+    padding: 40px;
+  }
+
+  .hero:not(.promo-panel) h1 {
+    font-size: var(--heading-font-size-xxl);
+    line-height: 44px;
+  }
+
+  .hero:not(.promo-panel) > div:last-child p:not(.button-container) {
+    display: block;
+  }
+
+  .hero:not(.promo-panel) .button-container {
+    margin-top: 50px;
+  }
+}
+
+/* ---------- promo-panel: full-bleed photo with a white text box on the right ---------- */
+.hero.promo-panel {
+  padding: 0 20px;
+}
+
+.hero.promo-panel .hero-image {
+  position: relative;
+  height: 180px;
+}
+
+.hero.promo-panel .hero-image img {
+  object-position: center top;
+}
+
+.hero.promo-panel .hero-panel {
+  position: relative;
+  box-sizing: border-box;
+  padding: 20px 0 0;
+  background-color: var(--background-color);
+}
+
+.hero.promo-panel .hero-panel h2 {
+  margin: 0 0 30px;
+  color: var(--text-color);
+  font-size: var(--heading-font-size-l);
+  line-height: 30px;
+}
+
+/* stylelint-disable-next-line no-descending-specificity -- never matches the same element as the default-hero copy rule */
+.hero.promo-panel .hero-panel p {
+  margin: 0 0 40px;
+}
+
+.hero.promo-panel .hero-panel .button-container {
+  margin: 0 0 20px;
+}
+
+.hero.promo-panel .hero-panel .button-container:last-child {
+  margin-bottom: 0;
+}
+
+/* filled red pill (default CTA) */
+main .hero.promo-panel a.button:any-link {
+  display: block;
+  width: 100%;
+  border: 1px solid transparent;
+  padding: 13px 18px;
+}
+
+main .hero.promo-panel a.button:hover,
+main .hero.promo-panel a.button:focus-visible {
+  border-color: transparent;
+  background-color: var(--link-hover-color);
+  color: #fff;
+}
+
+/* red outline pill: a CTA followed by another CTA (or an authored secondary button) */
+main .hero.promo-panel .button-container:has(+ .button-container) a.button:any-link,
+main .hero.promo-panel a.button.secondary:any-link {
+  border: 2px solid var(--link-color);
+  padding: 12px 18px;
+  background-color: transparent;
+  color: var(--link-color);
+}
+
+main .hero.promo-panel .button-container:has(+ .button-container) a.button:hover,
+main .hero.promo-panel .button-container:has(+ .button-container) a.button:focus-visible,
+main .hero.promo-panel a.button.secondary:hover,
+main .hero.promo-panel a.button.secondary:focus-visible {
+  border-color: var(--muted-color);
+  background-color: transparent;
+  color: var(--muted-color);
+}
+
+@media (width >= 900px) {
+  /* the image row collapses (its cell is absolute), the panel row is centered vertically */
+  .hero.promo-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 575px;
+    padding: 0 40px;
+  }
+
+  .hero.promo-panel .hero-image {
+    position: absolute;
+    inset: 0;
+    height: auto;
+  }
+
+  /* right half of the grid; content column (343px) centered inside the box */
+  .hero.promo-panel .hero-panel {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+    width: calc(50% - 10px);
+    min-height: 500px;
+    margin-left: auto;
+    padding: 0 calc(25% - 176.5px);
+  }
+
+  .hero.promo-panel .hero-panel > :not(.button-container) {
+    flex: 0 0 100%;
+  }
+
+  .hero.promo-panel .hero-panel h2 {
+    font-size: var(--heading-font-size-xl);
+    line-height: 36px;
+  }
+
+  /* CTAs sit side by side when they fit, otherwise wrap */
+  .hero.promo-panel .hero-panel .button-container {
+    margin: 0 15px 20px 0;
+  }
+
+  .hero.promo-panel .hero-panel .button-container:last-child {
+    margin: 0 0 20px;
+  }
+
+  main .hero.promo-panel a.button:any-link {
+    display: inline-block;
+    width: auto;
+  }
+}
+
+@media (width >= 1440px) {
+  .hero.promo-panel {
+    min-height: 768px;
+  }
+
+  .hero.promo-panel .hero-panel {
+    min-height: 607px;
+    padding: 0 calc(25% - 210px);
   }
 }

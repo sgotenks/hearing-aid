@@ -1,0 +1,47 @@
+{
+  "variantName": "table",
+  "baseBlock": "table",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "icon",
+    "structure": "text + image + list"
+  },
+  "contentPattern": {
+    "structure": "rows of cells; first row is the header row; cells hold text, lists or images"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_50f9a527763e",
+    "v_8ebf5fcc1086"
+  ],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.amplifon.com/ca/template-email/contact-us-email-service",
+        "instanceId": "4264c9b5",
+        "screenshot": ".pages/www_amplifon_com_ca_template-email_contact-us-email-service--a326b15a/blocks/4264c9b5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/template-email/online-store-configured-user",
+        "instanceId": "4264c9b5",
+        "screenshot": ".pages/www_amplifon_com_ca_template-email_online-store-configured-user--118d23d4/blocks/4264c9b5.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/template-email/contact-us-email-end-user",
+        "instanceId": "50b3dfc",
+        "screenshot": ".pages/www_amplifon_com_ca_template-email_contact-us-email-end-user--55cd9675/blocks/50b3dfc.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/template-email/online-store-end-user",
+        "instanceId": "50b3dfc",
+        "screenshot": ".pages/www_amplifon_com_ca_template-email_online-store-end-user--f7b91c39/blocks/50b3dfc.jpg"
+      }
+    ],
+    "reuseCount": 4,
+    "lastUsed": "2026-10-01T13:39:19.816Z"
+  }
+}

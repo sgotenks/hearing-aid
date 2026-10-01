@@ -1,0 +1,28 @@
+{
+  "variantName": "header",
+  "baseBlock": "header",
+  "canonicalModel": "configuration",
+  "visualCharacteristics": {
+    "colorScheme": "mixed",
+    "complexity": "moderate",
+    "density": "moderate"
+  },
+  "contentPattern": {
+    "structure": "nav fragment reference; brand, primary navigation sections and tools loaded from /nav"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "header-global"
+  ],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.amplifon.com/ca/",
+        "instanceId": "header-global",
+        "screenshot": ".pages/_global/header.jpg"
+      }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-01T13:39:19.537Z"
+  }
+}

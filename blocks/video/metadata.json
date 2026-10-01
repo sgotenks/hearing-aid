@@ -1,0 +1,43 @@
+{
+  "variantName": "video",
+  "baseBlock": "video",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "moderate",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "icon",
+    "structure": "heading + text + 3 CTAs + image"
+  },
+  "contentPattern": {
+    "structure": "video URL (link) with optional poster image",
+    "imageCount": 1
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_6ec642fa1cd3",
+    "v_1917185a97c6"
+  ],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.amplifon.com/ca/book-an-appointment",
+        "instanceId": "ef95740",
+        "screenshot": ".pages/www_amplifon_com_ca_book-an-appointment--06257422/blocks/ef95740.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/book-an-appointment-test",
+        "instanceId": "ef95740",
+        "screenshot": ".pages/www_amplifon_com_ca_book-an-appointment-test--dc9b0816/blocks/ef95740.jpg"
+      },
+      {
+        "url": "https://www.amplifon.com/ca/hearing-aids/maintenance/care-wherever-you-are/faqs-and-tutorials",
+        "instanceId": "57bb824",
+        "screenshot": ".pages/www_amplifon_com_ca_hearing-aids_maintenance_care-wherever-you-are_faqs-and-tutorials--ed605477/blocks/57bb824.jpg"
+      }
+    ],
+    "reuseCount": 3,
+    "lastUsed": "2026-10-01T13:39:20.109Z"
+  }
+}

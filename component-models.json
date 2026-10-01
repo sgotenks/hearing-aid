@@ -136,6 +136,10 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "Grey",
+            "value": "grey"
           }
         ]
       }
@@ -157,6 +161,47 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "cards",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Options",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Icon",
+            "value": "icon"
+          },
+          {
+            "name": "Teaser",
+            "value": "teaser"
+          },
+          {
+            "name": "Steps",
+            "value": "steps"
+          },
+          {
+            "name": "Image Overlay",
+            "value": "image-overlay"
+          },
+          {
+            "name": "Promo Tile",
+            "value": "promo-tile"
+          },
+          {
+            "name": "Icon Badge",
+            "value": "icon-badge"
+          }
+        ]
       }
     ]
   },
@@ -227,6 +272,30 @@
         "name": "rows",
         "value": "",
         "label": "Rows"
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Options",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Media Text",
+            "value": "media-text"
+          },
+          {
+            "name": "Cta Strip",
+            "value": "cta-strip"
+          },
+          {
+            "name": "Images",
+            "value": "images"
+          }
+        ]
       }
     ]
   },
@@ -304,6 +373,22 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Options",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Promo Panel",
+            "value": "promo-panel"
+          }
+        ]
       }
     ]
   },
