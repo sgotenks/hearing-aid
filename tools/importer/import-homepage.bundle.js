@@ -483,6 +483,11 @@ var CustomImportScript = (() => {
         "style"
       ]);
       element.querySelectorAll("[onclick]").forEach((el) => el.removeAttribute("onclick"));
+      element.querySelectorAll('img[src*="/content/dam/"]').forEach((img) => {
+        const src = img.getAttribute("src");
+        const original = src.replace(/\/(?:jcr:content|_jcr_content|jcr%3Acontent)\/renditions\/[^?#]*/i, "");
+        if (original !== src) img.setAttribute("src", original);
+      });
     }
   }
 

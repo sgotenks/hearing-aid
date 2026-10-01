@@ -16,7 +16,7 @@
   --overlay-background-color: lightgrey;
 
   /* nav heights incl. the 2px divider: compact bar on mobile, utility bar (39px) + main bar (86px) on desktop */
-  --nav-height: 64px;
+  --nav-height: 56px;
   --breadcrumbs-height: 34px;
   --header-height: var(--nav-height);
 }

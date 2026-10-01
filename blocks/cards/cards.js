@@ -78,8 +78,12 @@ export default function decorate(block) {
 
   const isIcon = active.includes('icon');
   ul.querySelectorAll('picture > img').forEach((img) => {
+    const url = new URL(img.src, window.location.href);
+    // only same-origin images go through the media pipeline: createOptimizedPicture keeps the
+    // path alone, so an external image would be requested from this site and 404
+    if (url.origin !== window.location.origin) return;
     // vector icons are not transformed by the media pipeline (no width/webp renditions)
-    if (/\.svg$/i.test(new URL(img.src, window.location.href).pathname)) return;
+    if (/\.svg$/i.test(url.pathname)) return;
     const inBadge = img.closest('.cards-card-badge');
     const width = (isIcon || inBadge) ? '160' : '750';
     const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width }]);

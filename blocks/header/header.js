@@ -27,13 +27,34 @@ function splitItem(li) {
 }
 
 /**
+ * Builds the header row of a mobile sub-panel: a back button and the panel title.
+ * @param {string} backLabel back button label
+ * @param {string} title panel title
+ * @returns {Element}
+ */
+function buildSubHeader(backLabel, title) {
+  const header = document.createElement('div');
+  header.className = 'nav-sub-header';
+  const back = document.createElement('button');
+  back.type = 'button';
+  back.className = 'nav-back';
+  back.textContent = backLabel;
+  const heading = document.createElement('p');
+  heading.className = 'nav-sub-title';
+  heading.textContent = title;
+  header.append(back, heading);
+  return header;
+}
+
+/**
  * Builds a dropdown panel of link columns from a nested list.
  * Each column is a heading link followed by a list of links.
  * @param {Element} list the trigger's nested list
  * @param {string} id panel id
+ * @param {string} label the trigger label
  * @returns {Element} panel
  */
-function buildPanel(list, id) {
+function buildPanel(list, id, label) {
   const panel = document.createElement('div');
   panel.className = 'nav-panel';
   panel.id = id;
@@ -46,17 +67,20 @@ function buildPanel(list, id) {
     if (heading) {
       heading.classList.add('nav-column-heading');
       col.append(heading);
-      // on mobile the heading toggles its links, so repeat it as the first link
-      const overview = document.createElement('li');
-      overview.className = 'nav-column-overview';
-      const overviewLink = heading.cloneNode(true);
-      overviewLink.className = '';
-      overview.append(overviewLink);
       const links = colLi.querySelector(':scope > ul');
       if (links) {
+        // on mobile the heading opens its links in a sub-panel, so repeat it as the first link
+        const overview = document.createElement('li');
+        overview.className = 'nav-column-overview';
+        const overviewLink = heading.cloneNode(true);
+        overviewLink.className = '';
+        overview.append(overviewLink);
         links.className = 'nav-column-links';
         links.prepend(overview);
-        col.append(links);
+        const sub = document.createElement('div');
+        sub.className = 'nav-column-panel';
+        sub.append(buildSubHeader(label, heading.textContent.trim()), links);
+        col.append(sub);
       }
     }
     columns.append(col);
@@ -67,7 +91,7 @@ function buildPanel(list, id) {
   close.type = 'button';
   close.className = 'nav-panel-close';
   close.setAttribute('aria-label', 'Close menu');
-  inner.append(columns, close);
+  inner.append(buildSubHeader('Back', label), columns, close);
   panel.append(inner);
   return panel;
 }
@@ -87,13 +111,31 @@ function wrapSection(section, className) {
 }
 
 /**
- * Closes every open dropdown in the nav.
+ * Wraps each link's text in a label span so it can sit next to (or under) its icon.
+ * @param {Element} container element containing the links
+ * @param {string} className label class
+ */
+function labelLinks(container, className) {
+  container.querySelectorAll('a').forEach((a) => {
+    const label = document.createElement('span');
+    label.className = className;
+    [...a.childNodes].filter((n) => n.nodeType === Node.TEXT_NODE).forEach((n) => label.append(n));
+    a.append(label);
+  });
+}
+
+/**
+ * Closes every open dropdown (and mobile sub-panel) in the nav.
  * @param {Element} nav nav element
  */
 function closeAllPanels(nav) {
   nav.querySelectorAll('.nav-trigger[aria-expanded="true"]').forEach((t) => {
     t.setAttribute('aria-expanded', 'false');
     t.closest('.nav-item').classList.remove('is-open');
+  });
+  nav.querySelectorAll('.nav-column.is-open').forEach((col) => {
+    col.classList.remove('is-open');
+    col.querySelector('.nav-column-heading').setAttribute('aria-expanded', 'false');
   });
   nav.classList.remove('has-open-panel');
 }
@@ -105,23 +147,22 @@ function closeAllPanels(nav) {
  * @param {boolean} [force] force open (true) or closed (false)
  */
 function togglePanel(nav, trigger, force) {
-  const open = force ?? trigger.getAttribute('aria-expanded') !== 'true';
-  if (isDesktop.matches) closeAllPanels(nav);
+  const open = force ?? !trigger.closest('.nav-item').classList.contains('is-open');
+  closeAllPanels(nav);
   trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
   trigger.closest('.nav-item').classList.toggle('is-open', open);
   nav.classList.toggle('has-open-panel', isDesktop.matches && open);
 }
 
 /**
- * Opens or closes the mobile menu.
+ * Opens or closes the mobile menu drawer.
  * @param {Element} nav nav element
  * @param {boolean} [force] force open (true) or closed (false)
  */
 function toggleMenu(nav, force) {
   const open = force ?? nav.getAttribute('aria-expanded') !== 'true';
-  const button = nav.querySelector('.nav-hamburger button');
   nav.setAttribute('aria-expanded', open ? 'true' : 'false');
-  button.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+  nav.querySelector('.nav-hamburger button').setAttribute('aria-expanded', open ? 'true' : 'false');
   document.body.style.overflowY = open && !isDesktop.matches ? 'hidden' : '';
   if (!open) closeAllPanels(nav);
 }
@@ -158,7 +199,7 @@ export default async function decorate(block) {
   if (!html) return;
   const fragment = document.createElement('div');
   fragment.innerHTML = html;
-  const [brandSection, toolsSection, navSection, ctaSection] = fragment.querySelectorAll(':scope > div');
+  const [brandSection, toolsSection, navSection, ctaSection, quickSection] = fragment.querySelectorAll(':scope > div');
 
   block.textContent = '';
   const nav = document.createElement('nav');
@@ -166,18 +207,26 @@ export default async function decorate(block) {
   nav.setAttribute('aria-expanded', 'false');
   nav.setAttribute('aria-label', 'Main');
 
-  // row 0: utility links
+  // row 0: utility links — the label sits in its own span next to the icon
   const tools = wrapSection(toolsSection, 'nav-tools');
+  labelLinks(tools, 'nav-tools-label');
 
-  // row 1: logo, nav sections, CTA
+  // row 1: logo, nav sections, CTA (+ mobile quick links and hamburger)
   const main = document.createElement('div');
   main.className = 'nav-main';
   const brand = wrapSection(brandSection, 'nav-brand');
   const brandLink = brand.querySelector('a');
   if (brandLink && !brandLink.getAttribute('aria-label')) brandLink.setAttribute('aria-label', 'Amplifon home');
 
+  // nav sections: horizontal dropdowns on desktop, a slide-in drawer on mobile
   const sections = document.createElement('div');
   sections.className = 'nav-sections';
+  const drawerClose = document.createElement('button');
+  drawerClose.type = 'button';
+  drawerClose.className = 'nav-drawer-close';
+  drawerClose.setAttribute('aria-label', 'Close menu');
+  sections.append(drawerClose);
+
   const navList = navSection?.querySelector(':scope > ul');
   if (navList) {
     navList.className = 'nav-list';
@@ -195,8 +244,12 @@ export default async function decorate(block) {
         trigger.innerHTML = '<span class="nav-trigger-label"></span><span class="nav-chevron" aria-hidden="true"></span>';
         trigger.querySelector('.nav-trigger-label').textContent = label;
         trigger.addEventListener('click', () => togglePanel(nav, trigger));
-        const panel = buildPanel(list, panelId);
+        const panel = buildPanel(list, panelId, label);
         panel.querySelector('.nav-panel-close').addEventListener('click', () => {
+          togglePanel(nav, trigger, false);
+          trigger.focus();
+        });
+        panel.querySelector(':scope > .nav-panel-inner > .nav-sub-header .nav-back').addEventListener('click', () => {
           togglePanel(nav, trigger, false);
           trigger.focus();
         });
@@ -209,11 +262,21 @@ export default async function decorate(block) {
     sections.append(navList);
   }
 
+  // mobile drawer footer: the utility links (except the phone number, which is in the bar)
+  const drawerTools = document.createElement('ul');
+  drawerTools.className = 'nav-drawer-tools';
+  tools.querySelectorAll('a:not([href^="tel:"])').forEach((a) => {
+    const item = document.createElement('li');
+    item.append(a.cloneNode(true));
+    drawerTools.append(item);
+  });
+  sections.append(drawerTools);
+
   const cta = wrapSection(ctaSection, 'nav-cta');
   const ctaLink = cta.querySelector('a');
   if (ctaLink) ctaLink.className = 'button';
 
-  // mobile column headings toggle their link lists; on desktop they are plain links
+  // mobile column headings open their links in a sub-panel; on desktop they are plain links
   const headings = sections.querySelectorAll('.nav-column-heading');
   const syncHeadings = () => headings.forEach((heading) => {
     if (isDesktop.matches) heading.removeAttribute('aria-expanded');
@@ -221,29 +284,45 @@ export default async function decorate(block) {
   });
   syncHeadings();
   headings.forEach((heading) => {
+    const col = heading.closest('.nav-column');
     heading.addEventListener('click', (e) => {
       if (isDesktop.matches) return;
       e.preventDefault();
-      const col = heading.closest('.nav-column');
-      const open = !col.classList.contains('is-open');
-      col.classList.toggle('is-open', open);
-      heading.setAttribute('aria-expanded', open ? 'true' : 'false');
+      col.classList.add('is-open');
+      heading.setAttribute('aria-expanded', 'true');
+    });
+    col.querySelector('.nav-column-panel .nav-back')?.addEventListener('click', () => {
+      col.classList.remove('is-open');
+      heading.setAttribute('aria-expanded', 'false');
+      heading.focus();
     });
   });
 
+  // mobile quick links (short labels under icons)
+  const quick = wrapSection(quickSection, 'nav-quick');
+  labelLinks(quick, 'nav-quick-label');
+
   const hamburger = document.createElement('div');
   hamburger.className = 'nav-hamburger';
-  hamburger.innerHTML = `<button type="button" aria-controls="nav" aria-label="Open navigation">
-      <span class="nav-hamburger-icon"></span>
+  hamburger.innerHTML = `<button type="button" aria-controls="nav" aria-expanded="false">
+      <span class="nav-hamburger-icon" aria-hidden="true"></span>
+      <span class="nav-hamburger-label">Menu</span>
     </button>`;
   hamburger.querySelector('button').addEventListener('click', () => toggleMenu(nav));
+  drawerClose.addEventListener('click', () => {
+    toggleMenu(nav, false);
+    hamburger.querySelector('button').focus();
+  });
 
-  main.append(brand, sections, cta, hamburger);
+  main.append(brand, sections, cta, quick, hamburger);
   nav.append(tools, main);
 
   const overlay = document.createElement('div');
   overlay.className = 'nav-overlay';
-  overlay.addEventListener('click', () => closeAllPanels(nav));
+  overlay.addEventListener('click', () => {
+    if (nav.getAttribute('aria-expanded') === 'true') toggleMenu(nav, false);
+    else closeAllPanels(nav);
+  });
 
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
@@ -269,7 +348,6 @@ export default async function decorate(block) {
   // reset state when crossing the desktop/mobile breakpoint
   isDesktop.addEventListener('change', () => {
     toggleMenu(nav, false);
-    sections.querySelectorAll('.nav-column.is-open').forEach((col) => col.classList.remove('is-open'));
     syncHeadings();
     navWrapper.classList.remove('nav-up');
   });

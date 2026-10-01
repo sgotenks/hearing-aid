@@ -52,5 +52,15 @@ export default function transform(hookName, element, payload) {
 
     // Strip inline event handlers.
     element.querySelectorAll('[onclick]').forEach((el) => el.removeAttribute('onclick'));
+
+    // Point DAM images at the original asset instead of a rendition
+    // (".../photo.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg" -> ".../photo.jpg").
+    // The AEM upload mirrors the image URL path into Assets, so a rendition URL turns the
+    // asset name into a folder (photo.jpg/jcr-content/renditions/...).
+    element.querySelectorAll('img[src*="/content/dam/"]').forEach((img) => {
+      const src = img.getAttribute('src');
+      const original = src.replace(/\/(?:jcr:content|_jcr_content|jcr%3Acontent)\/renditions\/[^?#]*/i, '');
+      if (original !== src) img.setAttribute('src', original);
+    });
   }
 }

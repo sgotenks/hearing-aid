@@ -1,20 +1,333 @@
+/* footer — mobile first (stacked + accordion link columns); desktop from 900px */
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: #444;
+  color: #fff;
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
-}
-
-footer .footer p {
+footer .footer > .footer-wrapper-inner {
   margin: 0;
+  max-width: none;
+  padding: 0;
+}
+
+footer .footer p,
+footer .footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer .footer a:any-link {
+  color: #fff;
+  font-weight: inherit;
+}
+
+footer .footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer .footer a:focus-visible,
+footer .footer button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+footer .footer-inner {
+  box-sizing: border-box;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 0 var(--content-gutter);
+}
+
+footer .footer-link-label {
+  display: inline-block;
+}
+
+/* band 1: logo, corporate links, country selector */
+footer .footer-top {
+  border-bottom: 2px solid #888;
+  padding: 30px 0 20px;
+}
+
+footer .footer-top .footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer .footer-logo {
+  line-height: 0;
+}
+
+footer .footer-logo img {
+  width: 125px;
+  height: auto;
+}
+
+footer .footer ul.footer-corporate {
+  display: flex;
+  flex-direction: column;
+  margin-top: 37px;
+  font-family: var(--heading-font-family);
+  font-size: 16px;
+  font-weight: var(--heading-font-weight);
+  line-height: 24px;
+}
+
+footer .footer-corporate li {
+  padding: 15px 0;
+}
+
+/* the country link closes the stack without row padding (as on the source) */
+footer .footer-corporate .footer-locale {
+  padding: 0;
+}
+
+footer .footer-corporate a:any-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .footer-corporate img {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+/* band 2: link columns — accordions on mobile */
+footer .footer-links .footer-inner {
+  padding: 0;
+}
+
+footer .footer-column {
+  border-bottom: 2px solid #888;
+}
+
+footer .footer-column-heading {
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+}
+
+footer .footer-column-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: none;
+  height: 64px;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  padding: 0 var(--content-gutter);
+  background: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: inherit;
+  line-height: 24px;
+  text-align: start;
+  white-space: normal;
+}
+
+footer .footer-column-toggle:hover,
+footer .footer-column-toggle:focus-visible {
+  border: 0;
+  background: none;
+  color: #fff;
+}
+
+footer .footer-column-toggle::after {
+  content: '';
+  flex: none;
+  width: 7px;
+  height: 7px;
+  margin: 0 3px 4px 16px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+  transition: transform 0.3s;
+}
+
+footer .footer-column.is-open .footer-column-toggle::after {
+  margin-bottom: -4px;
+  transform: rotate(225deg);
+}
+
+footer .footer ul.footer-column-links {
+  display: none;
+  padding: 0 var(--content-gutter) 30px;
+  background-color: #666;
+}
+
+footer .footer-column.is-open ul.footer-column-links {
+  display: block;
+}
+
+footer .footer-column-links a:any-link {
+  display: block;
+  padding: 15px 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* band 3: contact + social icons */
+footer .footer-social {
+  padding: 30px 0;
+}
+
+footer .footer-social ul {
+  display: flex;
+  align-items: flex-start;
+  gap: 34px;
+  min-height: 52px;
+}
+
+footer .footer-social li:first-child {
+  margin-right: 6px;
+}
+
+footer .footer-social a:any-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--heading-font-family);
+  font-size: 16px;
+  font-weight: var(--heading-font-weight);
+  line-height: 24px;
+}
+
+footer .footer-social img {
+  display: block;
+  height: auto;
+}
+
+/* band 4: legal links — 2-column grid on mobile */
+footer .footer-legal {
+  padding: 30px 0 50px;
+  background-color: var(--text-color);
+}
+
+footer .footer-legal ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 161px));
+  align-items: end;
+  gap: 6px 4px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 17px;
+}
+
+footer .footer-legal a:any-link {
+  display: block;
+  padding-top: 20px;
+}
+
+/* the consent link does not underline on hover (as on the source) */
+footer .footer-legal a[href$='#preferences']:hover {
+  text-decoration: none;
 }
 
 @media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+  /* band 1 */
+  footer .footer-top {
+    padding: 23px 0;
+  }
+
+  footer .footer-top .footer-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    min-height: 27px;
+  }
+
+  footer .footer-logo img {
+    width: 100px;
+  }
+
+  footer .footer ul.footer-corporate {
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 0;
+  }
+
+  footer .footer-corporate li {
+    padding: 0;
+  }
+
+  /* band 2: static link columns */
+  footer .footer-links {
+    padding-top: 40px;
+  }
+
+  footer .footer-links .footer-inner {
+    padding: 0 var(--content-gutter);
+  }
+
+  footer .footer-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 325px);
+    gap: 20px;
+  }
+
+  footer .footer-column {
+    border-bottom: 0;
+  }
+
+  footer .footer-column-toggle {
+    display: block;
+    height: auto;
+    padding: 0;
+    font-size: 14px;
+    line-height: 21px;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  footer .footer-column-toggle::after {
+    display: none;
+  }
+
+  footer .footer ul.footer-column-links,
+  footer .footer .footer-column.is-open ul.footer-column-links {
+    display: block;
+    padding: 0;
+    background: none;
+  }
+
+  footer .footer-column-links a:any-link {
+    padding: 20px 0 4px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  /* band 3 */
+  footer .footer-social {
+    padding: 60px 0 40px;
+  }
+
+  footer .footer-social ul {
+    align-items: center;
+    min-height: 27px;
+  }
+
+  /* band 4: single row */
+  footer .footer-legal {
+    padding: 20px 0;
+  }
+
+  footer .footer-legal ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 44px;
+    min-height: 20px;
+    padding-top: 6px;
+  }
+
+  footer .footer-legal a:any-link {
+    padding-top: 0;
   }
 }
