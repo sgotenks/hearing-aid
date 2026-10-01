@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p130360-e1272151.adobeaemcloud.com/bin/franklin.delivery/adobe-rnd/aem-block-collection-xwalk/main"
+    url: "https://author-p129757-e1266090.adobeaemcloud.com/bin/franklin.delivery/sgotenks/hearing-aid/main"
     type: "markup"
     suffix: ".html"
