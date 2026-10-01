@@ -1,7 +1,7 @@
 {
   "mappings": [
-    "/content/aem-block-collection/:/",
-    "/content/aem-block-collection/metadata:/metadata.json",
-    "/content/aem-block-collection/configuration:/.helix/config.json"
+    "/content/hearing-aid/:/",
+    "/content/hearing-aid/metadata:/metadata.json",
+    "/content/hearing-aid/configuration:/.helix/config.json"
   ]
 }
