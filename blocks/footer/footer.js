@@ -1,3 +1,5 @@
+import { liftSectionLink, normalizeFragment, textToLinkName } from '../../scripts/fragment.js';
+
 /**
  * Fetches the footer fragment. Local preview serves it from /content, DA/EDS from the root.
  * @returns {Promise<string|null>} the footer HTML
@@ -128,17 +130,26 @@ export default async function decorate(block) {
   if (!html) return;
   const fragment = document.createElement('div');
   fragment.innerHTML = html;
+  normalizeFragment(fragment);
   const [topSection, columnsSection, socialSection, legalSection] = fragment.querySelectorAll(':scope > div');
 
   block.textContent = '';
   const top = buildBand(topSection, 'footer-top');
-  top.querySelector(':scope > .footer-inner > ul')?.classList.add('footer-corporate');
+  const inner = top.querySelector(':scope > .footer-inner');
+  // the logo comes first (a one-item list, so AEM keeps its image), then the corporate links
+  const [logoItem, corporate] = inner.children;
+  const logo = document.createElement('div');
+  logo.append(logoItem);
+  const logoLink = liftSectionLink(logo);
+  if (logoLink) {
+    textToLinkName(logoLink, 'Amplifon home', (text) => `${text} home`);
+    logo.firstElementChild.classList.add('footer-logo');
+    inner.prepend(logo.firstElementChild);
+  }
+  corporate?.classList.add('footer-corporate');
   top.querySelectorAll('.footer-corporate > li').forEach((li) => {
     if (li.querySelector('img')) li.classList.add('footer-locale');
   });
-  top.querySelector(':scope > .footer-inner > p')?.classList.add('footer-logo');
-  const logoLink = top.querySelector('.footer-logo a');
-  if (logoLink && !logoLink.getAttribute('aria-label')) logoLink.setAttribute('aria-label', 'Amplifon home');
 
   const columns = buildBand(columnsSection, 'footer-links');
   decorateColumns(columns);

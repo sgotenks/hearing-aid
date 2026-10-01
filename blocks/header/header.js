@@ -1,3 +1,5 @@
+import { liftSectionLink, normalizeFragment, textToLinkName } from '../../scripts/fragment.js';
+
 // breakpoint at which the desktop header (utility bar + horizontal nav) is used
 const isDesktop = window.matchMedia('(width >= 900px)');
 
@@ -199,6 +201,7 @@ export default async function decorate(block) {
   if (!html) return;
   const fragment = document.createElement('div');
   fragment.innerHTML = html;
+  normalizeFragment(fragment);
   const [brandSection, toolsSection, navSection, ctaSection, quickSection] = fragment.querySelectorAll(':scope > div');
 
   block.textContent = '';
@@ -215,8 +218,8 @@ export default async function decorate(block) {
   const main = document.createElement('div');
   main.className = 'nav-main';
   const brand = wrapSection(brandSection, 'nav-brand');
-  const brandLink = brand.querySelector('a');
-  if (brandLink && !brandLink.getAttribute('aria-label')) brandLink.setAttribute('aria-label', 'Amplifon home');
+  const brandLink = liftSectionLink(brand);
+  if (brandLink) textToLinkName(brandLink, 'Amplifon home', (text) => `${text} home`);
 
   // nav sections: horizontal dropdowns on desktop, a slide-in drawer on mobile
   const sections = document.createElement('div');
@@ -273,7 +276,7 @@ export default async function decorate(block) {
   sections.append(drawerTools);
 
   const cta = wrapSection(ctaSection, 'nav-cta');
-  const ctaLink = cta.querySelector('a');
+  const ctaLink = liftSectionLink(cta);
   if (ctaLink) ctaLink.className = 'button';
 
   // mobile column headings open their links in a sub-panel; on desktop they are plain links
